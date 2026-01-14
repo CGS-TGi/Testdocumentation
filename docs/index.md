@@ -2,6 +2,8 @@
 
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
+![The San Juan Mountains are beautiful](docs/images/Abbildung-1-1.jpg "San Juan Mountains")
+
 ## Anwendungsbeschreibung
 
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -17,3 +19,5 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 #### Anwendungsbeschreibung
 
 aaaaaaaaaaaaaaaaaaaaaaaa
+
+![The San Juan Mountains are beautiful](/assets/images/Abbildung-1-1.jpg "San Juan Mountains")
