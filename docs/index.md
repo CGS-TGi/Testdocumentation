@@ -14,7 +14,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
-![The San Juan Mountains are beautiful](docs/images/Abbildung-1-1.jpg "San Juan Mountains")
+<!--include:parts/part1.md-->
 
 #### Anwendungsbeschreibung 4
 
