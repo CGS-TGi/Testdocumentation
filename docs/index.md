@@ -1,23 +1,23 @@
-# Anwendungsbeschreibung
+# Anwendungsbeschreibung 1
 
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 ![The San Juan Mountains are beautiful](docs/images/Abbildung-1-1.jpg "San Juan Mountains")
 
-## Anwendungsbeschreibung
+## Anwendungsbeschreibung 2
 
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 ![The San Juan Mountains are beautiful](/docs/images/Abbildung-1-1.jpg "San Juan Mountains")
 
-### Anwendungsbeschreibung
+### Anwendungsbeschreibung 3
 
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
-![The San Juan Mountains are beautiful](../images/Abbildung-1-1.jpg "San Juan Mountains")
+![The San Juan Mountains are beautiful](./docs/images/Abbildung-1-1.jpg "San Juan Mountains")
 
-#### Anwendungsbeschreibung
+#### Anwendungsbeschreibung 4
 
 aaaaaaaaaaaaaaaaaaaaaaaa
 
-![The San Juan Mountains are beautiful](/assets/images/Abbildung-1-1.jpg "San Juan Mountains")
+![The San Juan Mountains are beautiful](public/docs/images/Abbildung-1-1.jpg "San Juan Mountains")
