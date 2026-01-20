@@ -30,14 +30,14 @@ jobs:
 
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: documentation
+          input_dir: documentation/**
           output_dir: pdfs
-          # images_dir: docs/images
+          images_dir: documentation/user_manuals/de/docs/images
           # theme: styles/mytheme.css
           # for example <img src="./images/file-name.png">
-          # image_import: ./images
+          image_import: ./images
           # Default is true, can set to false to only get PDF files
-          build_html: true
+          build_html: false
 
       - uses: actions/upload-artifact@v4
         with:
