@@ -1,12 +1,8 @@
+## Sammlung häufig gestellter Fragen
 
-
-Dieses Dokument ist zur Sammlung häufig gestelleter Fragen in allen Bereichen des Projektes (z.B. Auslieferung, Bereitstellung)
+Dieses Dokument ist zur Sammlung häufig gestellter Fragen in allen Bereichen des Projektes (z.B. Auslieferung, Bereitstellung)
 Diese FAQ kann je Kunde und Projekt um spezifische Fragen/Antworten erweitert werden.
 
-### Inhaltsverzeichnis
-- 1 [Auslieferung](#1-auslieferung)
-- 2 [Phasenmodell der Auslieferung](#2-phasenmodell-der-auslieferung)
-- 2.1 [Pre-Sales und Anforderungsaufnahme](#21-pre-sales-und-anforderungsaufnahme)
 
 |  Frage  | Antwort | 
 | ------- | ------- | 

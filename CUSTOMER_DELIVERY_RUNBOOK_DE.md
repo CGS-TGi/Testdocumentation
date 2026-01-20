@@ -40,6 +40,7 @@ Weitere projektspezifische Dokumente (z. B. Architekturskizzen, Freigabeprotokol
 **Wichtige Referenzdokumente im Repository (Auswahl):**
 - `IT_REQUIREMENTS_AI_AUDIT_ASSIST_DE_EN.md` - technischen Voraussetzungen für die Bereitstellung und den Betrieb
 - `technical_requirements/CGS-Assist-Bereitstellung.docx` - CGS Assist technische Bereitstellungsanforderungen
+- `COLLECTION_FAQ.md` - Sammlung häufig gestelleter Fragen in allen Bereichen des Projektes (z.B. Auslieferung, Bereitstellung, Service)
 
 ## 1. Überblick und Rollen
 
