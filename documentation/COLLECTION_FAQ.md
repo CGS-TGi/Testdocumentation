@@ -14,8 +14,8 @@ Diese FAQ Liste kann je Kunde und Projekt um spezifische Fragen/Antworten erweit
 |Wie wird die Lösung bereitgestellt?|Über ein Docker Compose-Skript auf einem Linux-Server.|
 |Ist eine spezielle Azure-Integration notwendig?|Nein. Nur API-Key und Endpoint werden benötigt.|
 |Ist eine VM zwingend erforderlich?|Nein. Jeder Linux-Server mit Docker Compose ist geeignet.|
-|Benötigt die Lösung eine dauerhafte Internetverbindung?|Cloud-Provider (Azure/AWS): Ja<br>
-Lokale Modelle: Nur für Installation<br>|
+|Benötigt die Lösung eine dauerhafte Internetverbindung?|Cloud-Provider (Azure/AWS): |
+|	|Lokale Modelle: Nur für Installation|
 |Wird ein LLM mitgeliefert?| Kunde muss selbst einen LLM-Provider bereitstellen (Azure OpenAI, AWS Bedrock oder lokales Modell). |
 |Welchen LLM-Provider soll ich wählen?| Empfehlung:|
 |	|Azure OpenAI (bevorzugt) – wenn Sie Azure nutzen
@@ -30,3 +30,9 @@ Lokale Modelle: Nur für Installation<br>|
 |	|Azure OpenAI: $100-500/Monat (50 Nutzer)
 |	|AWS Bedrock: $80-400/Monat (50 Nutzer)
 |	|Lokal: €0 API-Kosten, aber Hardware-Investment|
+|Wie erfolgt sie Authentifizierung?|über die lokale Benutzer-/Passwortverwaltung (LDAP des Kunden, DB des Kunden)|
+|	|über Microsoft Entra ID (ehemals Azure AD/Entra) (OIDC/SAML)|
+|	|API-Token für Integrationen|
+|Wie ist der Zugriff abgesichert?| Absicherung Zertifikate (TLS/HTTPS)|
+|	|Let's Encrypt (via Caddy)|
+|	|Eigene Zertifikate (interne CA)|

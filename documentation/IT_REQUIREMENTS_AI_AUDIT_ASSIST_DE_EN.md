@@ -19,7 +19,7 @@ Der Kunde muss selbst einen LLM-Provider bereitstellen. Folgende Optionen werden
 ---
 
 ## 1. Allgemeine Voraussetzungen (DE)
-
+ 
 ### 1.1 Infrastruktur (VM oder Server)
 
 Die Lösung wird auf einem **Linux-basierten Server** bereitgestellt (lokale VM oder Cloud-VM). Es ist **keine spezielle Cloud-Integration erforderlich** – jeder Linux-Server mit Docker Compose ist geeignet.
