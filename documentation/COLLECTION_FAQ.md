@@ -14,13 +14,13 @@ Diese FAQ Liste kann je Kunde und Projekt um spezifische Fragen/Antworten erweit
 |Wie wird die Lösung bereitgestellt?|Über ein Docker Compose-Skript auf einem Linux-Server.|
 |Ist eine spezielle Azure-Integration notwendig?|Nein. Nur API-Key und Endpoint werden benötigt.|
 |Ist eine VM zwingend erforderlich?|Nein. Jeder Linux-Server mit Docker Compose ist geeignet.|
-|Benötigt die Lösung eine dauerhafte Internetverbindung?|Cloud-Provider (Azure/AWS): |
+|Benötigt die Lösung eine dauerhafte Internetverbindung?|Cloud-Provider (Azure/AWS): Ja|
 |	|Lokale Modelle: Nur für Installation|
 |Wird ein LLM mitgeliefert?| Kunde muss selbst einen LLM-Provider bereitstellen (Azure OpenAI, AWS Bedrock oder lokales Modell). |
 |Welchen LLM-Provider soll ich wählen?| Empfehlung:|
-|	|Azure OpenAI (bevorzugt) – wenn Sie Azure nutzen
-|	|AWS Bedrock (gleichwertig) – wenn Sie AWS nutzen
-|	|Lokale Modelle – höchster Datenschutz
+|	|Azure OpenAI (bevorzugt) – wenn Sie Azure nutzen|
+|	|AWS Bedrock (gleichwertig) – wenn Sie AWS nutzen|
+|	|Lokale Modelle – höchster Datenschutz|
 |	|Alle drei werden vollständig unterstützt|
 |Ist Azure OpenAI zwingend?|Nein. Azure ist bevorzugt, aber nicht zwingend. AWS Bedrock und lokale Modelle sind gleichwertige Alternativen.|
 |Wie setze ich Azure OpenAI auf?| `IT_REQUIREMENTS_AI_AUDIT_ASSIST_DE_EN.md` Siehe Abschnitt 2.2 für Schritt-für-Schritt-Anleitung|
