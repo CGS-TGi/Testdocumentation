@@ -269,11 +269,12 @@ Vor dem finalen Go-Live sollten u. a. folgende Punkte erfüllt sein:
 
 ### 7.3 Kontinuierliche Verbesserung
 
-## 8. Anhänge und Verweise
-
 - Erfahrungsaustausch zwischen CGS und Kunden (Best Practices)
 - Planung zusätzlicher Use-Cases und Integrationen
 - Regelmäßige Review-Termine (z. B. quartalsweise) zur Bewertung der Nutzung
+
+
+
 
 
 
