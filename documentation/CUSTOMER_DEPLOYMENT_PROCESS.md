@@ -1,7 +1,21 @@
 # Customer Deployment Process - CGS Assist
 
-## Übersicht
 Dieses Dokument beschreibt den vollständigen Prozess zur Auslieferung der CGS Assist Anwendung an einen Kunden.
+
+### Inhaltsverzeichnis
+- 1 [Vorbereitung](#1-vorbereitung)
+- 2 [Lizenzierung](#2-lizenzierung)
+- 3 [Konfiguration](#3-konfiguration)
+- 4 [Build-Prozess](#4-build-prozess)
+- 5 [Deployment](#5-deployment)
+- 6 [Konfiguration und Customization](#6-konfiguration-und-customization)
+- 7 [Testing und Validierung](#7-testing-und-validierung)
+- 8 [Dokumentation](#8-dokumentation)
+- 9 [Übergabe und Training](#9-übergabe-und-training)
+- 10 [Post-Deployment](#10-post-deployment)
+- 11 [Troubleshooting](#11-troubleshooting)
+- 12 [Checkliste für Go-Live](#12-checkliste-für-go-live)
+- 13 [Kontakt und Support](#13-kontakt-und-support)
 
 ## 1. Vorbereitung
 
@@ -133,24 +147,24 @@ docker-compose logs -f
 curl http://localhost:8000/health
 ```
 
-## 7. Konfiguration & Customization
+## 6. Konfiguration und Customization
 
-### 7.1 Branding anpassen
+### 6.1 Branding anpassen
 - [ ] CGS / ARC Version im docker compose setzen
 
-### 7.2 Module konfigurieren
+### 6.2 Module konfigurieren
 - [ ] **LLM API**: Provider & Modelle konfigurieren
 - [ ] **RAG API**: Vector Store & Embeddings einrichten
 - [ ] **Workflow Engine**: Automationen einrichten
 
-### 7.3 Benutzer & Rechte
+### 6.3 Benutzer & Rechte
 - [ ] Admin-Benutzer anlegen
 - [ ] Benutzerrollen definieren
 - [ ] Zugriffsrechte konfigurieren
 
-## 8. Testing & Validierung
+## 7. Testing und Validierung
 
-### 8.1 Funktionale Tests
+### 7.1 Funktionale Tests
 - [ ] Login & Authentifizierung
 - [ ] Alle Module testen
   - LLM Chat-Funktionalität
@@ -160,55 +174,55 @@ curl http://localhost:8000/health
 - [ ] API-Endpoints testen
 - [ ] WebSocket-Verbindungen prüfen
 
-### 8.2 Performance-Tests
+### 7.2 Performance-Tests
 - [ ] Last-Tests durchführen
 - [ ] Response-Zeiten messen
 - [ ] Ressourcen-Auslastung überwachen
 
-### 8.3 Sicherheits-Tests
+### 7.3 Sicherheits-Tests
 - [ ] SSL/TLS Verbindung prüfen
 - [ ] Authentifizierung validieren
 - [ ] CORS-Konfiguration testen
 - [ ] Datei-Upload Sicherheit
 
-## 9. Dokumentation
+## 8. Dokumentation
 
-### 9.1 Kundendokumentation bereitstellen
+### 8.1 Kundendokumentation bereitstellen
 - [ ] `DEPLOYMENT_GUIDE.md` - Installations-Anleitung
 - [ ] `QUICK_START_ONBOARDING.md` - Schnellstart für Endbenutzer
 - [ ] `ONBOARDING_TEMPLATE_SETUP.md` - Onboarding-Konfiguration
 - [ ] API-Dokumentation (Swagger/OpenAPI)
 - [ ] Troubleshooting-Guide
 
-### 9.2 Admin-Dokumentation
+### 8.2 Admin-Dokumentation
 - [ ] Backup & Restore Prozeduren
 - [ ] Monitoring & Logging
 - [ ] Update-Prozess
 - [ ] Skalierung & Performance-Tuning
 
-## 10. Übergabe & Training
+## 9. Übergabe und Training
 
-### 10.1 Technische Übergabe
+### 9.1 Technische Übergabe
 - [ ] Zugang zu allen Systemen bereitstellen
 - [ ] Passwörter & Secrets übergeben (sicher!)
 - [ ] Backup-Strategie erklären
 - [ ] Monitoring-Dashboard einrichten
 
-### 10.2 Benutzer-Training
+### 9.2 Benutzer-Training
 - [ ] Admin-Training durchführen
 - [ ] End-User Training durchführen
 - [ ] Dokumentation durchgehen
 - [ ] Q&A Session
 
-### 10.3 Support-Vereinbarung
+### 9.3 Support-Vereinbarung
 - [ ] Support-Level definieren (SLA)
 - [ ] Eskalations-Prozess festlegen
 - [ ] Kontaktdaten austauschen
 - [ ] Wartungsfenster vereinbaren
 
-## 11. Post-Deployment
+## 10. Post-Deployment
 
-### 11.1 Monitoring einrichten
+### 10.1 Monitoring einrichten
 ```bash
 # Logs überwachen
 docker-compose logs -f --tail=100
@@ -220,19 +234,19 @@ docker stats
 curl http://localhost:8000/health
 ```
 
-### 11.2 Backup-Strategie
+### 10.2 Backup-Strategie
 - [ ] Datenbank-Backups konfigurieren
 - [ ] File-Upload Backups
 - [ ] Konfigurationsdateien sichern
 - [ ] Backup-Restore testen
 
-### 11.3 Wartungsplan
+### 10.3 Wartungsplan
 - [ ] Regelmäßige Updates planen
 - [ ] Log-Rotation konfigurieren
 - [ ] Disk-Space Monitoring
 - [ ] Security-Patches anwenden
 
-## 12. Troubleshooting
+## 11. Troubleshooting
 
 ### Häufige Probleme
 
@@ -265,7 +279,7 @@ docker-compose up -d
 - [ ] Redis Cache optimieren
 - [ ] Datenbank-Indizes prüfen
 
-## 13. Checkliste für Go-Live
+## 12. Checkliste für Go-Live
 
 ### Pre-Go-Live
 - [ ] Alle Tests erfolgreich
@@ -288,7 +302,7 @@ docker-compose up -d
 - [ ] Performance-Metriken prüfen
 - [ ] Support-Verfügbarkeit sicherstellen
 
-## 14. Kontakt & Support
+## 13. Kontakt und Support
 
 **CGS Software & Data GmbH**
 - Website: https://www.cgs-online.de/
