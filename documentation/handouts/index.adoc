@@ -1,18 +1,7 @@
 :doctype: book
 :author: cgs
 :revdate: 2026-02-02 
-:title: CGS Assist
-*KI-Plattform für den Mittelstand*
-*KI-Plattform für den Mittelstand*
-:front-cover-image: theme/ASSISTDOC-TitlePage.png
-:toc: left
-:toc-interactive: true // in pdf the active section will be highlighted
-:toc-mode: offcanvas
-:toc-mode: responsive
-:toc-title: Inhaltsverzeichnis
-:toclevels: 7
-:figure-caption: Abbildung
-:imagesdir: images
+:title: CGS Assist *KI-Plattform für den Mittelstand* *Technische Voraussetzungen*
 :sectnums:
 :sectnumlevels: 7
 :pdf-theme: default
