@@ -1,7 +1,8 @@
 :doctype: book
 :author: cgs
 :revdate: 2026-02-02 
-:title: CGS Assist 
+:title: CGS Assist
+:front-cover-image: theme/ASSISTDOC-TitlePage.png
 :toc: left
 :toc-interactive: true // in pdf the active section will be highlighted
 :toc-mode: offcanvas
@@ -23,5 +24,7 @@
 include::chapter/intro.adoc[]
 
 include::chapter/chapter1.adoc[]
+
+include::chapter/chapter2.adoc[]
 
 

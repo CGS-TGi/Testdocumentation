@@ -1,23 +1,63 @@
 extends: default
 title-page:
   background-image: image:ASSISTDOC-TitlePage.png[]
-  font-color: '#86888a'
-  font-family: Helvetica
-  font-size: 14
-  align: left
+  background-color: 'EAEAEA'  # Hellgrauer Titelseiten-Hintergrund
+  logo:
+    image: image:ASSISTDOC-TitlePage.png[]  # Optional: Titelbild auf der Titelseite
+    fit: contain
+    align: center
   title:
-    margin-left: 80
-    font-color: '#86888a'
-    top: 73%
-    font-size: 19
+    font-size: 36
+    font-color: '333333'
     font-style: bold
-    margin-bottom: 15
+    align: center
+  author:
+    font-size: 22
+    font-color: '555555'
+    align: center
   subtitle:
-    margin-left: 153
-  authors:
-    margin-left: 153
-    font-color: '#86888a'
-  revision:
-    margin-left: 153
+    font-size: 24
+    font-color: '888888'
+    align: center
+  date:
+    font-size: 14
+    font-color: '777777'
+    align: center
+
+base:
+  font-color: '222222'
+  font-family: Noto Serif
+  page:
+    margin: [36, 36, 36, 36]
+
+toc:
+  title:
+    font-size: 28
+    font-color: '444488'
+    align: left
+  column:
+    font-size: 12
+    font-color: '222222'
+
 heading:
-  font-family: Helvetica
+  h1:
+    font-size: 30
+    font-color: '333366'
+    font-style: bold
+  h2:
+    font-size: 22
+    font-color: '224488'
+    font-style: bold
+  h3:
+    font-size: 16
+    font-color: '224488'
+    font-style: italic
+
+table:
+  border-color: 'CCCCCC'
+  head:
+    font-color: '444488'
+    background-color: 'ECECEC'
+    font-style: bold
+  body:
+    font-color: '222222'

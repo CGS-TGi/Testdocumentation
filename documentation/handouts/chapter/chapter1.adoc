@@ -1,6 +1,5 @@
 === Allgemeine Voraussetzungen
 
-[cols="2*", options="header"]
 |===
 
 | *Infrastruktur (VM oder Server)*
