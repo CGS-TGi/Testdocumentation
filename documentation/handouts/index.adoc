@@ -4,7 +4,6 @@
 :title: CGS Assist *KI-Plattform für den Mittelstand* *Technische Voraussetzungen*
 :sectnums:
 :sectnumlevels: 7
-:pdf-theme: default
 //:cgs-assist: 1
 :arc-assist: 1
 
