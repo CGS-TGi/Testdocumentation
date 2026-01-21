@@ -1,4 +1,4 @@
-=== Allgemeine Voraussetzungen
+== Allgemeine Voraussetzungen
 
 |===
 | *Infrastruktur (VM oder Server)*				| Linux-basierter Server (lokale VM oder Cloud-VM)
