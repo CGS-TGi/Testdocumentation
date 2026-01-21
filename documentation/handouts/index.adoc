@@ -1,5 +1,4 @@
-= CGS Assist
-KI-Plattform für den Mittelstand 
+= CGS Assist: KI-Plattform für den Mittelstand 
 Technische Voraussetzungen 
 :doctype: book
 :author: cgs
