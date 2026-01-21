@@ -24,4 +24,4 @@
 
 include::chapter/intro.adoc[]
 
-include::../parts/part1.adoc[]
+include::chaper/part1.adoc[]
