@@ -2,6 +2,8 @@
 :author: cgs
 :revdate: 2026-02-02 
 :title: CGS Assist
+*KI-Plattform für den Mittelstand*
+*KI-Plattform für den Mittelstand*
 :front-cover-image: theme/ASSISTDOC-TitlePage.png
 :toc: left
 :toc-interactive: true // in pdf the active section will be highlighted
@@ -13,15 +15,21 @@
 :imagesdir: images
 :sectnums:
 :sectnumlevels: 7
+:pdf-theme: default
 //:cgs-assist: 1
 :arc-assist: 1
 
+[preface]
+== Voraussetzungen für den Betrieb von CGS Assist
 
-*KI-Plattform für den Mittelstand*
+*CGS Assist* ist eine *browserbasierte Webanwendung*, die lokal beim Kunden gehostet wird. 
+Der Betrieb erfolgt in *Docker-Containern* auf einem *Linux-Server* (entweder *on-premise* oder in einer *Cloud-VM*). 
+Die Anwendung dient zur Nutzung von KI-Sprachmodellen (Large Language Models, LLMs), welche über eine externe API angebunden werden, u. a. Azure OpenAI. 
+Mit *CGS Assist* können Nutzer effizient Dokumente analysieren, Abfragen stellen und Daten verarbeiten, basierend auf KI-Technologien.
 
-*Technische Vorrausetzungen*
-
-include::chapter/intro.adoc[]
+*CGS Assist* wird ohne eigene(s) KI-Sprachmodell(e) ausgeliefert. Stattdessen greift das Tool über eine API-Anbindung auf 
+die *LLM-Infrastruktur des Kunden* zurück. Damit *CGS Assist* ein Sprachmodell nutzen kann, muss eine funktionsfähige Anbindung 
+an ein unterstütztes LLM eingerichtet werden.
 
 include::chapter/chapter1.adoc[]
 

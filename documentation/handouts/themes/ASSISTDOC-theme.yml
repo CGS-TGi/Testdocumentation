@@ -32,32 +32,32 @@ base:
 
 toc:
   title:
-    font-size: 28
-    font-color: '444488'
+    font-size: 
+    font-color: '224488'
     align: left
   column:
     font-size: 12
-    font-color: '222222'
+    font-color: '224488'
 
 heading:
   h1:
-    font-size: 30
-    font-color: '333366'
-    font-style: bold
-  h2:
-    font-size: 22
+    font-size: 23
     font-color: '224488'
-    font-style: bold
+    font-style: italic
+  h2:
+    font-size: 20
+    font-color: '224488'
+    font-style: italic
   h3:
-    font-size: 16
+    font-size: 12
     font-color: '224488'
     font-style: italic
 
 table:
   border-color: 'CCCCCC'
   head:
-    font-color: '444488'
+    font-color: '224488'
     background-color: 'ECECEC'
-    font-style: bold
+    font-style: italic
   body:
     font-color: '222222'
