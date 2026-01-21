@@ -36,7 +36,7 @@ jobs:
 
       - name: Run asciidoctor on index.adoc
         run: asciidoctor documentation/handouts/index.adoc
-
+            
   pages:
  #   if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
