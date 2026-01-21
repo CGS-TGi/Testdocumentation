@@ -33,6 +33,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: List files to check if documentation/handouts/index.adoc exists
+        run: ls -l documentation/handouts
 
       - name: Run asciidoctor on index.adoc
         run: asciidoctor documentation/handouts/index.adoc
