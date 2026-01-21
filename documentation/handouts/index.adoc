@@ -18,12 +18,12 @@
 :arc-assist: 1
 
 
-//= ARC Assist Anwenderhandbuch
 *KI-Plattform für den Mittelstand*
+
 *Technische Vorrausetzungen*
 
 include::chapter/intro.adoc[]
 
-include::chapter/part1.adoc[]
+include::chapter/chapter1.adoc[]
 
 
