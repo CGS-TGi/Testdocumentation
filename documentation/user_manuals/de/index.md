@@ -155,7 +155,7 @@ Hier werden alle vefügbaren Verlinkungen zu anderen Seiten oder Anwendungen ang
 
 ![Navigationsbereich - Portal](./images/Abbildung-40.jpg "Navigationsbereich - Portal")
 
-Mit einem Klick auf das Symbol, weird die Verknüpfung geöffnet.
+Mit einem Klick auf das Symbol, wird die Verknüpfung, je nach Browsereinstellung, in einen neuen Browsertab oder Fenster geöffnet.
 
 ### 1.2 Assist Administration
 
@@ -249,12 +249,12 @@ Es kann nach Auswahl eine gänzlich neue Lizenz hochgeladen werden.
 
 #### 1.2.8 Portal-Seite
 
-Hier können die Verknüpfungen zu anderen Seiten und Applikationen verwaltet werden. Es besteht die Möglichkeit zur Neuanlage, 
-zum Löschen und Bearbeiten einzelner Einträge und zum Deaktivieren der gesamtem Portal-Seite. Dadurch ist diese nicht in der Navigation verfügbar.
+Hier können verschiedene Verknüpfungen verwaltet werden. Es besteht die Möglichkeit zur Neuanlage, zum Löschen und Bearbeiten einzelner Einträge.
+Zusätzlich aknn die gesamte Portalseite deaktiviert werden und diese ist dadurch nicht mehr in der Navigation verfügbar.
 
 ![Administration - Portal-Seite](./images/Abbildung-41.jpg "Administration - Portal-Seite")
 
-Es kann nach Auswahl eine gänzlich neue Lizenz hochgeladen werden.
+Es können Seiten oder Applikationen verknüpft werden. Die Verknüpfung von Dokumenten auf Laufwerden oder Shares ist nicht möglich.
 
 ![Administration - Portal-Seite - Link erstellen](./images/Abbildung-42.jpg "Administration - Portal-Seite - Link erstellen")
 
