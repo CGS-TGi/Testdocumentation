@@ -4,7 +4,7 @@
 
 Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen:
 * Dokumentensammlung bis ca. 100 MB
-*Geringe bis moderate gleichzeitige Nutzer
+* Geringe bis moderate gleichzeitige Nutzer
 
 |===
 | *Arbeitsspeicher (vRAM)*	| 8 GB

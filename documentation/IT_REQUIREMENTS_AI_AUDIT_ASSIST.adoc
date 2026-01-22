@@ -338,42 +338,48 @@ ollama pull llama3.1:70b
 ---
 
 ## 3. Serveranforderungen 
+
 #tag::Kunden-Serveranforderungen[]
+
 #### Entry Level (RAG, 8 GB RAM)
-Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen: * Dokumentensammlung bis
-ca. 100 MB *Geringe bis moderate gleichzeitige Nutzer
+Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen: 
+* Dokumentensammlung bis ca. 100 MB
+* Geringe bis moderate gleichzeitige Nutzer
 
 **Geeignet für:** Test- und PoC-Umgebungen
 
 - **RAM:** 8 GB
 - **CPU:** 4 vCPUs
-- **Storage:** 250 GB SSD
+- **Storage:** 250 GB SSD (virtueller NVMe/SSD-Speicher)
 - **Szenarien:** Bis 100 MB Dokumente, 1-5 Nutzer
 
 #### Mid-Tier Level (RAG, 32 GB RAM)
-Für wachsende Datenmengen und höhere Nutzerzahlen: * Dokumentensammlung bis ca. 5 GB *
-Moderate bis hohe gleichzeitige Nutzerzahlen
+Für wachsende Datenmengen und höhere Nutzerzahlen: 
+* Dokumentensammlung bis ca. 5 GB
+* Moderate bis hohe gleichzeitige Nutzerzahlen
 
 **Geeignet für:** Produktivumgebungen
 
 - **RAM:** 32 GB
 - **CPU:** 8–12 vCPUs
-- **Storage:** 1 TB SSD
+- **Storage:** 1 TB SSD (virtueller NVMe/SSD-Speicher)
 - **Szenarien:** Bis 5 GB Dokumente, 10-50 Nutzer
 
 #### High-End Level (RAG, 64 GB RAM)
 
-Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben: *
-Dokumentensammlung über 5 GB * Viele gleichzeitige Nutzer bzw. komplexe, rechenintensive
-Abfragen
+Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben: 
+* Dokumentensammlung über 5 GB
+* Viele gleichzeitige Nutzer bzw. komplexe, rechenintensive Abfragen
 
 **Geeignet für:** Große Produktivumgebungen
 
 - **RAM:** 64 GB
 - **CPU:** 16–32 vCPUs
-- **Storage:** 2 TB SSD
+- **Storage:** 2 TB SSD (virtueller NVMe/SSD-Speicher)
 - **Szenarien:** Über 5 GB Dokumente, 50+ Nutzer
+
 #end::Kunden-Serveranforderungen[]
+
 **Hinweis bei lokalen LLMs:** Die oben genannten Anforderungen gelten für die Anwendung. Lokale LLM-Server benötigen **zusätzliche** GPU-Hardware (siehe Abschnitt 2.4).
 
 ---
