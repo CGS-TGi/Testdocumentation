@@ -13,6 +13,7 @@
 - 1.1.2 [Navigationsbereich "Anwendungsfälle"](#112-navigationsbereichn-anwendungsfälle)
 - 1.1.3 [Navigationsbereich "Automatisierung"](#113-navigationsbereich-automatisierung)
 - 1.1.4 [Navigationsbereich "Dokumente"](#114-navigationsbereich-dokumente)
+- 1.1.5 [Navigationsbereich "Portale"](#115-navigationsbereich-portale)
 - 1.2 [Assist Administration](#12-assist-administration)
 - 1.2.1 [Benutzerverwaltung](#121-benutzerverwaltung)
 - 1.2.1.1 [Benutzer bearbeiten](#1211-benutzer-bearbeiten)
@@ -23,6 +24,7 @@
 - 1.2.5 [LLMs und Einbettungsmodelle](#125llms-und-einbettungsmodelle)
 - 1.2.6 [Anwendungsfälle](#126-anwendungsfälle)
 - 1.2.7 [Lizenzverwaltung](#127-lizenzverwaltung)
+- 1.2.8 [Portal-Seite](#128-portal-seite)
 - 2 [Kontakt](#2-kontakt)
 
 ## 1. Anwendungsbeschreibung 
@@ -250,7 +252,7 @@ Es kann nach Auswahl eine gänzlich neue Lizenz hochgeladen werden.
 #### 1.2.8 Portal-Seite
 
 Hier können verschiedene Verknüpfungen verwaltet werden. Es besteht die Möglichkeit zur Neuanlage, zum Löschen und Bearbeiten einzelner Einträge.
-Zusätzlich aknn die gesamte Portalseite deaktiviert werden und diese ist dadurch nicht mehr in der Navigation verfügbar.
+Zusätzlich kann die gesamte Portalseite deaktiviert werden und diese ist dadurch nicht mehr in der Navigation verfügbar.
 
 ![Administration - Portal-Seite](./images/Abbildung-41.jpg "Administration - Portal-Seite")
 
