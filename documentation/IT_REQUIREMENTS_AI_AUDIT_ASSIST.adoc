@@ -440,7 +440,7 @@ Die Lösung besteht aus folgenden Docker-Containern:
   - Azure OpenAI: `*.openai.azure.com`
   - AWS Bedrock: `bedrock-runtime.<region>.amazonaws.com`
   - Lokal: Interne Verbindung
-#end::kunden-anforderungen-allgemein[]
+
 **Proxy-Konfiguration:**
 ```bash
 HTTP_PROXY=http://proxy.ihrefirma.de:8080
@@ -449,6 +449,7 @@ NO_PROXY=localhost,ollama-server
 ```
 
 ---
+#tag::kunden-anforderungen-allgemein[]
 
 ## 6. Datenbank und Storage 
 
@@ -461,7 +462,9 @@ NO_PROXY=localhost,ollama-server
 
 **Alle Daten liegen auf dem Kundenserver.**
 
+#end::kunden-anforderungen-allgemein[]
 ---
+#tag::kunden-anforderungen-allgemein[]
 
 ## 7. Authentifizierung 
 
@@ -469,7 +472,11 @@ NO_PROXY=localhost,ollama-server
 - Azure AD/Entra (OIDC/SAML)
 - API-Token für Integrationen
 
+#end::kunden-anforderungen-allgemein[]
+
 ---
+
+#tag::kunden-anforderungen-allgemein[]
 
 ## 8. Security und Compliance 
 
@@ -479,7 +486,11 @@ Obligatorisch für Produktion. Zertifikate:
 - Let's Encrypt (via Caddy)
 - Eigene Zertifikate (interne CA)
 
+#end::kunden-anforderungen-allgemein[]
+
 ### 8.2 Datenschutz
+
+#tag::kunden-anforderungen-allgemein[]
 
 **Anwendungsdaten:** Ausschließlich auf Kundenserver
 
@@ -489,6 +500,7 @@ Obligatorisch für Produktion. Zertifikate:
 
 **Lokale Modelle:** Höchste DSGVO-Konformität
 
+#end::kunden-anforderungen-allgemein[]
 ---
 
 ## 9. Backup und Recovery 
