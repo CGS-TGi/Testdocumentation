@@ -24,22 +24,16 @@ Der Kunde muss selbst einen LLM-Provider bereitstellen. Folgende Optionen werden
  
 ### 1.1 Infrastruktur (VM oder Server)
 
-Die Lösung wird auf einem **Linux-basierten Server** bereitgestellt (lokale VM oder Cloud-VM). Es ist **keine spezielle Cloud-Integration erforderlich** – jeder Linux-Server mit Docker Compose ist geeignet.
+Die Lösung wird auf einem *Linux-basierten Server* bereitgestellt (lokale VM oder Cloud-VM). Es ist *keine spezielle Cloud-Integration erforderlich* – jeder Linux-Server mit Docker Compose ist geeignet.
 
-**Wichtig:** Eine VM ist **nicht zwingend erforderlich**. Die Lösung kann auf jedem Linux-Server mit Docker Compose betrieben werden.
+*Wichtig:* Eine VM ist *nicht zwingend erforderlich*. Die Lösung kann auf jedem Linux-Server mit Docker Compose betrieben werden.
 
 #end::kunden-anforderungen-allgemein[]
-
-#tag::kunden-anforderungen-allgemein[]
 
 ### 1.2 Betriebssystem
 
 - **Linux**, z. B. Ubuntu Server LTS (24.04) oder vergleichbare Distributionen
 - Getestet mit Ubuntu; andere Linux-Distributionen auf Anfrage
-
-#end::kunden-anforderungen-allgemein[]
-
-#tag::kunden-anforderungen-allgemein[]
 
 ### 1.3 Docker-Umgebung
 
@@ -50,8 +44,6 @@ Die Bereitstellung erfolgt über **Docker Compose**.
 - **Docker Compose:** Version ≥ 1.29 oder Compose V2
 
 **Installation:** Der Kunde muss Docker und Docker Compose auf dem Server installieren und konfigurieren.
-
-#end::kunden-anforderungen-allgemein[]
 
 ### 1.4 Gemeinsames Verzeichnis (SHARED_FOLDER)
 
