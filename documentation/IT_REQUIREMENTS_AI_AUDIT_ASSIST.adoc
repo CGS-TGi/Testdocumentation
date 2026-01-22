@@ -19,6 +19,8 @@ Der Kunde muss selbst einen LLM-Provider bereitstellen. Folgende Optionen werden
 ---
 
 ## 1. Allgemeine Voraussetzungen
+
+#tag::kunden-anforderungen-allgemein[]
  
 ### 1.1 Infrastruktur (VM oder Server)
 
@@ -71,6 +73,8 @@ Ein **beschreibbares Verzeichnis** auf dem Server für den Datenaustausch zwisch
 
 **Empfehlung für Produktion:** Einsatz eines Reverse Proxys (z. B. Caddy, Nginx) mit TLS-Zertifikaten.
 
+#end::kunden-anforderungen-allgemein[]
+
 **DNS-Anforderungen für Caddy mit Let's Encrypt:**
 
 Wenn Sie Caddy mit automatischen Let's Encrypt TLS-Zertifikaten verwenden möchten:
@@ -97,6 +101,7 @@ cgs-assist.ihrefirma.de {
 - Optional: Eigene TLS-Zertifikate, falls Let's Encrypt nicht verwendet werden soll
 
 ---
+#tag::kunden-anforderungen-allgemein[]
 
 ## 2. LLM-Provider – Bereitstellung durch den Kunden 
 
@@ -129,6 +134,8 @@ cgs-assist.ihrefirma.de {
 - Aktives Azure-Abonnement (Subscription)
 - Freigabe für Azure OpenAI Service (kann Genehmigung erfordern)
 - Ausreichende Berechtigungen zum Erstellen von Ressourcen
+
+#end::kunden-anforderungen-allgemein[]
 
 #### Schritt-für-Schritt: Azure OpenAI Service aufsetzen
 
@@ -343,6 +350,7 @@ ollama pull llama3.1:70b
 
 #### Entry Level (RAG, 8 GB RAM)
 Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen: 
+
 * Dokumentensammlung bis ca. 100 MB
 * Geringe bis moderate gleichzeitige Nutzer
 
@@ -355,6 +363,7 @@ Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen:
 
 #### Mid-Tier Level (RAG, 32 GB RAM)
 Für wachsende Datenmengen und höhere Nutzerzahlen: 
+
 * Dokumentensammlung bis ca. 5 GB
 * Moderate bis hohe gleichzeitige Nutzerzahlen
 
@@ -368,6 +377,7 @@ Für wachsende Datenmengen und höhere Nutzerzahlen:
 #### High-End Level (RAG, 64 GB RAM)
 
 Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben: 
+
 * Dokumentensammlung über 5 GB
 * Viele gleichzeitige Nutzer bzw. komplexe, rechenintensive Abfragen
 
@@ -442,7 +452,7 @@ NO_PROXY=localhost,ollama-server
 **Alle Daten liegen auf dem Kundenserver.**
 
 ---
-
+#tag::kunden-anforderungen-allgemein[]
 ## 7. Authentifizierung 
 
 - Lokale Benutzer-/Passwortverwaltung
@@ -468,7 +478,7 @@ Obligatorisch für Produktion. Zertifikate:
 - **Empfehlung:** EU-Region wählen (DSGVO)
 
 **Lokale Modelle:** Höchste DSGVO-Konformität
-
+#end::kunden-anforderungen-allgemein[]
 ---
 
 ## 9. Backup und Recovery 

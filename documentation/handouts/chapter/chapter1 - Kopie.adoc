@@ -12,7 +12,3 @@
 |												| Proxy-Unterstützung ist möglich
 | *Netzwerk / Ports*							| Standardzugang: Port 8000 (bei Bedarf anpassbar).
 |===
-
------------------------------------
-
-include::../../IT_REQUIREMENTS_AI_AUDIT_ASSIST.adoc[tags=kunden-anforderungen-allgemein]
