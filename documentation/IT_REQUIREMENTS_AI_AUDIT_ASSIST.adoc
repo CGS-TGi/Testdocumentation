@@ -101,7 +101,7 @@ cgs-assist.ihrefirma.de {
 - Optional: Eigene TLS-Zertifikate, falls Let's Encrypt nicht verwendet werden soll
 
 ---
-#tag::kunden-anforderungen-allgemein[]
+
 
 ## 2. LLM-Provider – Bereitstellung durch den Kunden 
 
@@ -135,7 +135,7 @@ cgs-assist.ihrefirma.de {
 - Freigabe für Azure OpenAI Service (kann Genehmigung erfordern)
 - Ausreichende Berechtigungen zum Erstellen von Ressourcen
 
-#end::kunden-anforderungen-allgemein[]
+
 
 #### Schritt-für-Schritt: Azure OpenAI Service aufsetzen
 
@@ -452,7 +452,7 @@ NO_PROXY=localhost,ollama-server
 **Alle Daten liegen auf dem Kundenserver.**
 
 ---
-#tag::kunden-anforderungen-allgemein[]
+
 ## 7. Authentifizierung 
 
 - Lokale Benutzer-/Passwortverwaltung
@@ -478,7 +478,7 @@ Obligatorisch für Produktion. Zertifikate:
 - **Empfehlung:** EU-Region wählen (DSGVO)
 
 **Lokale Modelle:** Höchste DSGVO-Konformität
-#end::kunden-anforderungen-allgemein[]
+
 ---
 
 ## 9. Backup und Recovery 
