@@ -4,24 +4,24 @@ title-page:
   background-color: 'EAEAEA'  # Hellgrauer Titelseiten-Hintergrund
   title:
     font-size: 38
-    font-color: '222222'
+    font-color: '4F2F9C'
     font-style: bold
     align: center
     top-margin: 10  # Abstand von oben in Punkten
   subtitle:
     font-size: 26
-    font-color: '222222'
+    font-color: '4F2F9C'
     font-style: italic
     align: left
     top-margin: 20
   author:
     font-size: 16
-    font-color: '222222'
+    font-color: '4F2F9C'
     align: left
     top-margin: 30
   date:
     font-size: 16
-    font-color: '222222'
+    font-color: '4F2F9C'
     align: left
     top-margin: 40
 
@@ -43,20 +43,20 @@ toc:
 heading:
   h1:
     font-size: 23
-    font-color: '224488'
+    font-color: '4F2F9C'
     font-style: italic
   h2:
     font-size: 20
-    font-color: '224488'
+    font-color: '4F2F9C'
     font-style: italic
   h3:
     font-size: 12
-    font-color: '224488'
+    font-color: '4F2F9C'
     font-style: italic
    h4:
     font-size: 10
-    font-color: '224488'
-    font-style: italic
+    font-color: '4F2F9C'
+    font-style: bold
 
 table:
   border-color: 'EEEEEE'
