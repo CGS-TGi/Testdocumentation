@@ -1,6 +1,6 @@
-== Server / Virtual Machines
+=== Server / Virtual Machines
 
-=== Entry Level (RAG, 8 GB RAM)
+==== Entry Level (RAG, 8 GB RAM)
 
 Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen:
 * Dokumentensammlung bis ca. 100 MB
@@ -12,7 +12,7 @@ Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen:
 | *Speicher*				| 250 GB SSD (virtueller NVMe/SSD-Speicher)
 |===
 
-=== Mid-Tier Level (RAG, 32 GB RAM)
+==== Mid-Tier Level (RAG, 32 GB RAM)
 
 Für wachsende Datenmengen und höhere Nutzerzahlen:
 * Dokumentensammlung bis ca. 5 GB
@@ -24,7 +24,7 @@ Für wachsende Datenmengen und höhere Nutzerzahlen:
 | *Speicher*				| 1 TB SSD (virtueller NVMe/SSD-Speicher)
 |===
 
-=== High-End Level (RAG, 64 GB RAM)
+==== High-End Level (RAG, 64 GB RAM)
 
 Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben:
 * Dokumentensammlung über 5 GB

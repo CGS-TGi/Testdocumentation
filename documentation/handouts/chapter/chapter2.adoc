@@ -1,6 +1,6 @@
-== Anbindung von Sprachmodellen
+=== Anbindung von Sprachmodellen
 
-=== Azure OpenAI
+==== Azure OpenAI
 
 Erforderlich ist ein aktives Azure-Konto mit OpenAI Subscription.
 

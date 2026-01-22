@@ -1,4 +1,4 @@
-## Sammlung häufig gestellter Fragen
+=== Sammlung häufig gestellter Fragen
 
 #tag:: Kunde-FAQ1[]
 Dieses Dokument ist zur Sammlung häufig gestellter Fragen in allen Bereichen des Projektes (z.B. Auslieferung, Bereitstellung).
