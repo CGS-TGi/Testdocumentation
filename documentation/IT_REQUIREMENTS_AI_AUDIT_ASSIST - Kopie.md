@@ -19,23 +19,17 @@ Der Kunde muss selbst einen LLM-Provider bereitstellen. Folgende Optionen werden
 ---
 
 ## 1. Allgemeine Voraussetzungen
-
+ 
 ### 1.1 Infrastruktur (VM oder Server)
 
 Die Lösung wird auf einem **Linux-basierten Server** bereitgestellt (lokale VM oder Cloud-VM). Es ist **keine spezielle Cloud-Integration erforderlich** – jeder Linux-Server mit Docker Compose ist geeignet.
 
 **Wichtig:** Eine VM ist **nicht zwingend erforderlich**. Die Lösung kann auf jedem Linux-Server mit Docker Compose betrieben werden.
 
-#end::kunden-anforderungen-allgemein[]
-
 ### 1.2 Betriebssystem
 
 - **Linux**, z. B. Ubuntu Server LTS (24.04) oder vergleichbare Distributionen
 - Getestet mit Ubuntu; andere Linux-Distributionen auf Anfrage
-
-#end::kunden-anforderungen-allgemein[]
-
-#tag::kunden-anforderungen-allgemein[]
 
 ### 1.3 Docker-Umgebung
 
@@ -47,21 +41,13 @@ Die Bereitstellung erfolgt über **Docker Compose**.
 
 **Installation:** Der Kunde muss Docker und Docker Compose auf dem Server installieren und konfigurieren.
 
-#end::kunden-anforderungen-allgemein[]
-
-#tag::kunden-anforderungen-allgemein[]
-
 ### 1.4 Gemeinsames Verzeichnis (SHARED_FOLDER)
 
 Ein **beschreibbares Verzeichnis** auf dem Server für den Datenaustausch zwischen den Containern und für persistente Daten (Dokumente, Datenbanken, Vector-Store).
 
 **Aufgabe des Kunden:** Bereitstellung eines Verzeichnisses mit ausreichenden Schreib-/Leserechten für die Docker-Container.
 
-#end::kunden-anforderungen-allgemein[]
-
-#tag::kunden-anforderungen-allgemein[]
-
-### 1.5 Internetzugang und Proxy
+### 1.5 Internetzugang / Proxy
 
 **Erforderlich für:**
 - Download der Docker-Images (während der Installation)
@@ -73,11 +59,7 @@ Ein **beschreibbares Verzeichnis** auf dem Server für den Datenaustausch zwisch
 - **Bei Cloud-LLM-Providern (Azure OpenAI, AWS Bedrock):** Dauerhafte Internetverbindung erforderlich
 - **Bei lokalen Modellen:** Nur für Installation erforderlich (Download der Docker-Images)
 
-#end::kunden-anforderungen-allgemein[]
-
-#tag::kunden-anforderungen-allgemein[]
-
-### 1.6 Netzwerk und Ports
+### 1.6 Netzwerk / Ports
 
 **Erforderliche Ports:**
 
@@ -88,8 +70,6 @@ Ein **beschreibbares Verzeichnis** auf dem Server für den Datenaustausch zwisch
 | **8000** | HTTP | Direktzugriff auf Anwendung | Test/Entwicklung |
 
 **Empfehlung für Produktion:** Einsatz eines Reverse Proxys (z. B. Caddy, Nginx) mit TLS-Zertifikaten.
-
-#end::kunden-anforderungen-allgemein[]
 
 **DNS-Anforderungen für Caddy mit Let's Encrypt:**
 
@@ -117,7 +97,6 @@ cgs-assist.ihrefirma.de {
 - Optional: Eigene TLS-Zertifikate, falls Let's Encrypt nicht verwendet werden soll
 
 ---
-#tag::kunden-anforderungen-allgemein[]
 
 ## 2. LLM-Provider – Bereitstellung durch den Kunden 
 
@@ -136,7 +115,6 @@ cgs-assist.ihrefirma.de {
 - Datenschutz- und Compliance-Anforderungen
 - Budget und Betriebsmodell
 
-#end::kunden-anforderungen-allgemein[]
 ---
 
 ### 2.2 Option A: Azure OpenAI (Empfohlen)
@@ -361,49 +339,32 @@ ollama pull llama3.1:70b
 
 ## 3. Serveranforderungen 
 
-#tag::Kunden-Serveranforderungen[]
-
-#### Entry Level (RAG, 8 GB RAM)
-Für kleinere Datenmengen und geringe bis moderate Nutzerzahlen: 
-
-* Dokumentensammlung bis ca. 100 MB
-* Geringe bis moderate gleichzeitige Nutzer
+### 3.1 Einfache Umgebung (8 GB RAM)
 
 **Geeignet für:** Test- und PoC-Umgebungen
 
 - **RAM:** 8 GB
 - **CPU:** 4 vCPUs
-- **Storage:** 250 GB SSD (virtueller NVMe/SSD-Speicher)
+- **Storage:** 250 GB SSD
 - **Szenarien:** Bis 100 MB Dokumente, 1-5 Nutzer
 
-#### Mid-Tier Level (RAG, 32 GB RAM)
-Für wachsende Datenmengen und höhere Nutzerzahlen: 
-
-* Dokumentensammlung bis ca. 5 GB
-* Moderate bis hohe gleichzeitige Nutzerzahlen
+### 3.2 Mittlere Umgebung (32 GB RAM)
 
 **Geeignet für:** Produktivumgebungen
 
 - **RAM:** 32 GB
 - **CPU:** 8–12 vCPUs
-- **Storage:** 1 TB SSD (virtueller NVMe/SSD-Speicher)
+- **Storage:** 1 TB SSD
 - **Szenarien:** Bis 5 GB Dokumente, 10-50 Nutzer
 
-#### High-End Level (RAG, 64 GB RAM)
-
-Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben: 
-
-* Dokumentensammlung über 5 GB
-* Viele gleichzeitige Nutzer bzw. komplexe, rechenintensive Abfragen
+### 3.3 Große Umgebung (64 GB RAM)
 
 **Geeignet für:** Große Produktivumgebungen
 
 - **RAM:** 64 GB
 - **CPU:** 16–32 vCPUs
-- **Storage:** 2 TB SSD (virtueller NVMe/SSD-Speicher)
+- **Storage:** 2 TB SSD
 - **Szenarien:** Über 5 GB Dokumente, 50+ Nutzer
-
-#end::Kunden-Serveranforderungen[]
 
 **Hinweis bei lokalen LLMs:** Die oben genannten Anforderungen gelten für die Anwendung. Lokale LLM-Server benötigen **zusätzliche** GPU-Hardware (siehe Abschnitt 2.4).
 
@@ -454,7 +415,6 @@ NO_PROXY=localhost,ollama-server
 ```
 
 ---
-#tag::kunden-anforderungen-allgemein[]
 
 ## 6. Datenbank und Storage 
 
@@ -467,9 +427,7 @@ NO_PROXY=localhost,ollama-server
 
 **Alle Daten liegen auf dem Kundenserver.**
 
-#end::kunden-anforderungen-allgemein[]
 ---
-#tag::kunden-anforderungen-allgemein[]
 
 ## 7. Authentifizierung 
 
@@ -477,11 +435,7 @@ NO_PROXY=localhost,ollama-server
 - Azure AD/Entra (OIDC/SAML)
 - API-Token für Integrationen
 
-#end::kunden-anforderungen-allgemein[]
-
 ---
-
-#tag::kunden-anforderungen-allgemein[]
 
 ## 8. Security und Compliance 
 
@@ -490,10 +444,6 @@ NO_PROXY=localhost,ollama-server
 Obligatorisch für Produktion. Zertifikate:
 - Let's Encrypt (via Caddy)
 - Eigene Zertifikate (interne CA)
-
-#end::kunden-anforderungen-allgemein[]
-
-#tag::kunden-anforderungen-allgemein[]
 
 ### 8.2 Datenschutz
 
@@ -505,7 +455,6 @@ Obligatorisch für Produktion. Zertifikate:
 
 **Lokale Modelle:** Höchste DSGVO-Konformität
 
-#end::kunden-anforderungen-allgemein[]
 ---
 
 ## 9. Backup und Recovery 

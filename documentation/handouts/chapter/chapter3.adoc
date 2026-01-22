@@ -1,3 +1,3 @@
 === Server / Virtual Machines
 
-include::../../IT_REQUIREMENTS_AI_AUDIT_ASSIST.adoc[tags=Kunden-Serveranforderungen]
+include::../../IT_REQUIREMENTS_AI_AUDIT_ASSIST.md[tags=Kunden-Serveranforderungen]
