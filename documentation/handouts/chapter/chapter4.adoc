@@ -1,4 +1,4 @@
-==== Häufig gestellte Fragen (FAQ)
+=== Häufig gestellte Fragen (FAQ)
 
 include::../../COLLECTION_FAQ.adoc[tags=Kunde-FAQ1]
 

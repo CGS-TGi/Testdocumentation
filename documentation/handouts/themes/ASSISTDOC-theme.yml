@@ -12,7 +12,7 @@ title-page:
     font-size: 26
     font-color: '222222'
     font-style: italic
-    align: center
+    align: left
     top-margin: 1020
   author:
     font-size: 16
