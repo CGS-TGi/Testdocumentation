@@ -87,8 +87,11 @@ cgs-assist.ihrefirma.de {
 ```
 
 **Alternative DNS‑01 (öffentlich trusted, ohne Freigabe 80/443)**
+
 Zertifikatsanfrage über DNS-Einträge verifiziert anstatt Inhalte über HTTP bereitzustellen 
+
 Beispiel Provider-Syntax Cloudflare Token als Env-Var:
+
 ``
 texttest.server.de {reverse_proxy cgs_assist_server:8000 {
 		header_up X-Forwarded-Proto {scheme}        
@@ -105,9 +108,13 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 {
 				}
 		}
 ``
+
 **Wichtig:** in der Konfigurationsdatei des Caddy-Server muss das Plugin "caddy-dns" eingebunden werden, sonst wird "dns cloudflare" nicht gefunden.
+
 Beispiel Eigenes Zertifikat (PEM + Key):
+
 Wenn ein Zertifikat existiert (z. B. von eurer Firmen‑PKI, oder manuell erzeugt), wird es direkt eingebunden:
+
 ``
 texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
 	Strict-Transport-Security "max-age=31536000; includeSubDomains" -Server}    
@@ -115,6 +122,7 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
 	tls /etc/caddy/certs/test.server.de.fullchain.pem /etc/caddy/certs/test.server.de.key
 	}
 ``
+
 **Wichtig:* Die Zertifikatskette muss vollständig sein(typisch “fullchain”) und die SANs (Subject Alternative Names) müssen zum Hostnamen passen.
 
 **Alternative ohne öffentlichen DNS:**
