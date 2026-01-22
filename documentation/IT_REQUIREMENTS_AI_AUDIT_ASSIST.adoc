@@ -338,7 +338,7 @@ ollama pull llama3.1:70b
 ---
 
 ## 3. Serveranforderungen 
-tag::[Kunden-Serveranforderungen]
+#tag::Kunden-Serveranforderungen]
 ### 3.1 Einfache Umgebung (8 GB RAM)
 
 **Geeignet für:** Test- und PoC-Umgebungen
@@ -365,7 +365,7 @@ tag::[Kunden-Serveranforderungen]
 - **CPU:** 16–32 vCPUs
 - **Storage:** 2 TB SSD
 - **Szenarien:** Über 5 GB Dokumente, 50+ Nutzer
-end::[Kunden-Serveranforderungen]
+#end::Kunden-Serveranforderungen[]
 **Hinweis bei lokalen LLMs:** Die oben genannten Anforderungen gelten für die Anwendung. Lokale LLM-Server benötigen **zusätzliche** GPU-Hardware (siehe Abschnitt 2.4).
 
 ---
