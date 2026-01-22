@@ -131,6 +131,7 @@ cgs-assist.ihrefirma.de {
 - Datenschutz- und Compliance-Anforderungen
 - Budget und Betriebsmodell
 
+#end::kunden-anforderungen-allgemein[]
 ---
 
 ### 2.2 Option A: Azure OpenAI (Empfohlen)
@@ -145,8 +146,6 @@ cgs-assist.ihrefirma.de {
 - Aktives Azure-Abonnement (Subscription)
 - Freigabe für Azure OpenAI Service (kann Genehmigung erfordern)
 - Ausreichende Berechtigungen zum Erstellen von Ressourcen
-
-#end::kunden-anforderungen-allgemein[]
 
 #### Schritt-für-Schritt: Azure OpenAI Service aufsetzen
 
@@ -404,7 +403,7 @@ Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben:
 **Hinweis bei lokalen LLMs:** Die oben genannten Anforderungen gelten für die Anwendung. Lokale LLM-Server benötigen **zusätzliche** GPU-Hardware (siehe Abschnitt 2.4).
 
 ---
-#tag::kunden-anforderungen-allgemein[]
+
 ## 4. Systemkomponenten 
 
 Die Lösung besteht aus folgenden Docker-Containern:
