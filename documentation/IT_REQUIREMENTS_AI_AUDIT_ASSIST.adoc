@@ -51,6 +51,8 @@ Die Bereitstellung erfolgt über **Docker Compose**.
 
 **Installation:** Der Kunde muss Docker und Docker Compose auf dem Server installieren und konfigurieren.
 
+#end::kunden-anforderungen-allgemein[]
+
 #tag::kunden-anforderungen-allgemein[]
 
 ### 1.4 Gemeinsames Verzeichnis (SHARED_FOLDER)
@@ -58,6 +60,10 @@ Die Bereitstellung erfolgt über **Docker Compose**.
 Ein **beschreibbares Verzeichnis** auf dem Server für den Datenaustausch zwischen den Containern und für persistente Daten (Dokumente, Datenbanken, Vector-Store).
 
 **Aufgabe des Kunden:** Bereitstellung eines Verzeichnisses mit ausreichenden Schreib-/Leserechten für die Docker-Container.
+
+#end::kunden-anforderungen-allgemein[]
+
+#tag::kunden-anforderungen-allgemein[]
 
 ### 1.5 Internetzugang und Proxy
 
@@ -71,6 +77,9 @@ Ein **beschreibbares Verzeichnis** auf dem Server für den Datenaustausch zwisch
 - **Bei Cloud-LLM-Providern (Azure OpenAI, AWS Bedrock):** Dauerhafte Internetverbindung erforderlich
 - **Bei lokalen Modellen:** Nur für Installation erforderlich (Download der Docker-Images)
 
+#end::kunden-anforderungen-allgemein[]
+
+#tag::kunden-anforderungen-allgemein[]
 
 ### 1.6 Netzwerk und Ports
 
