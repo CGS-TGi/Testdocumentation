@@ -207,6 +207,7 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
    - Deployment-Namen der Modelle
 
 **Beispiel:**
+
 `
 Endpoint: https://cgs-assist-openai-prod.openai.azure.com/
 API Key: 1234567890abcdef...
@@ -247,6 +248,7 @@ Deployment Name: gpt-4o
 ##### Schritt 2: IAM-Berechtigungen einrichten
 
 Erstellen Sie einen IAM-User mit folgender Policy:
+
 `
 {
   "Version": "2012-10-17",
@@ -274,6 +276,7 @@ Erstellen Sie einen IAM-User mit folgender Policy:
    - Model ID (z. B. `anthropic.claude-3-5-sonnet-20240620-v1:0`)
 
 **Beispiel:**
+
 `
 AWS Access Key ID: AKIAIOSFODNN7EXAMPLE
 AWS Secret Access Key: wJalrXUtnFEMI/K7MDENG...
@@ -309,11 +312,11 @@ Die Plattform unterstützt lokale LLMs über **OpenAI-kompatible APIs**.
 **Setup-Beispiel mit Ollama:**
 
 `
-# Ollama installieren
+Ollama installieren
 curl -fsSL https://ollama.ai/install.sh | sh
-# Modell herunterladen
+Modell herunterladen
 ollama pull llama3.1:70b
-# API läuft auf http://localhost:11434/v1 (OpenAI-kompatibel)
+API läuft auf http://localhost:11434/v1 (OpenAI-kompatibel)
 `
 
 ### 2.5 Token-Rate-Limits dimensionieren
