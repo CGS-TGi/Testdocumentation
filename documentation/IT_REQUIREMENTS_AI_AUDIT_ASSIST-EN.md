@@ -37,8 +37,8 @@ Deployment is managed via **Docker Compose**.
 
 **Required versions:**
 
-- **Docker Engine:** Version größer 20.x
-- **Docker Compose:** Version größer 1.29 or Compose V2
+- **Docker Engine:** Version gt 20.x
+- **Docker Compose:** Version gt 1.29 or Compose V2
 
 **Installation:** The customer must install and configure Docker and Docker Compose on the server.
 
@@ -253,7 +253,7 @@ Deployment Name: gpt-4o
 
 Create an IAM user with the following policy:
 
-```json
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -493,7 +493,6 @@ Mandatory for production. Certificates:
 |App Updates			|Responsible|Accountable|
 |Security Patches (OS)	|Consult	|Responsible|
 
----
 <div class="pagebreak"></div>
 
 ## 11. FAQ
@@ -541,7 +540,6 @@ All application data is stored on the customer server. For cloud LLMs, requests 
 - AWS Bedrock: $80-400/month (50 users)
 - Local: €0 API costs, but hardware investment required
 
----
 <div class="pagebreak"></div>
 
 ## 12. Checklist

@@ -248,7 +248,7 @@ Deployment Name: gpt-4o
 
 Erstellen Sie einen IAM-User mit folgender Policy:
 
-```json
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -440,6 +440,7 @@ Obligatorisch für Produktion. Zertifikate:
 **Anwendungsdaten:** Ausschließlich auf Kundenserver
 
 **LLM-Provider (Cloud):**
+
 - Azure OpenAI / AWS Bedrock: Anfragen werden übertragen, aber nicht dauerhaft gespeichert
 - **Empfehlung:** EU-Region wählen (DSGVO)
 
