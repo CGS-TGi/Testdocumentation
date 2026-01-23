@@ -116,7 +116,7 @@ Own certificate example (PEM + Key):
 
 If a certificate exists (e.g., from your company PKI or manually generated), integrate it directly:
 
-'''
+```
 texttest.server.com {reverse_proxy cgs_assist_server:8000 header {
     Strict-Transport-Security "max-age=31536000; includeSubDomains" -Server}    
     # Certificate + Private Key (PEM)    
