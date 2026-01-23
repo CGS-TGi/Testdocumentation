@@ -49,11 +49,11 @@ heading:
     font-color: '3f6172'
     font-style: italic
   h3:
-    font-size: 12
+    font-size: 18
     font-color: '3f6172'
     font-style: italic
   h4:
-    font-size: 10
+    font-size: 12
     font-color: '3f6172'
     font-style: italic
 
@@ -71,7 +71,7 @@ chapter:
   
 image-caption:
   font_color: #006699
-  font_size: 10
+  font_size: 8
   font_style: italic
   align: left
   margin_top: 4
