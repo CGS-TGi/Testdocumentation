@@ -8,6 +8,10 @@ Ziel: 		Markdown-Dateien in Docs-Pfad werden zu einem einzelnen PDF kombiniert (
 Wichtige Punkte:
 Trigger: 	push auf main sowie workflow_dispatch (manuelles Ausführen).
 			Job md2pdf läuft auf ubuntu-latest.
+			
+			
+			
+			
 Schritte enthalten:
 	Checkout des Repos (uses: actions/checkout@v4).
 	Installation von Pandoc und LaTeX (texlive-full).
