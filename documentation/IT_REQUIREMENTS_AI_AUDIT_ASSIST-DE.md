@@ -125,10 +125,12 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
 **Wichtig:** Die Zertifikatskette muss vollständig sein(typisch “fullchain”) und die SANs (Subject Alternative Names) müssen zum Hostnamen passen.
 
 **Alternative ohne öffentlichen DNS:**
+
 - Verwendung eigener TLS-Zertifikate (z. B. von interner CA)
 - Zugriff nur über IP-Adresse: `http://<server-ip>:8000` (nur für Test/Entwicklung empfohlen)
 
 **Aufgabe des Kunden:** 
+
 - Firewall-Freigabe für Ports 80 und 443 (Produktion) oder 8000 (Test)
 - DNS-Konfiguration: A-Record für den gewünschten FQDN (z. B. `cgs-assist.ihrefirma.de`) auf Server-IP
 - Bereitstellung des FQDN für die Caddyfile-Konfiguration
@@ -147,6 +149,7 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
 | **Lokale Modelle** |  Für hohe Datenschutzanforderungen | Maximaler Datenschutz, keine Cloud | Hoch (GPU-Hardware erforderlich) |
 
 **Wählen Sie einen Provider basierend auf:**
+
 - Vorhandener Cloud-Infrastruktur (Azure oder AWS)
 - Datenschutz- und Compliance-Anforderungen
 - Budget und Betriebsmodell
@@ -154,12 +157,14 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
 ### 2.2 Option A: Azure OpenAI (Empfohlen)
 
 **Warum Azure OpenAI empfohlen wird:**
+
 - Bewährte Enterprise-Integration
 - Verfügbarkeit in EU-Regionen (DSGVO-konform)
 - Microsoft Enterprise Support
 - Bewährte GPT Modelle
 
 **Voraussetzungen:**
+
 - Aktives Azure-Abonnement (Subscription)
 - Freigabe für Azure OpenAI Service (kann Genehmigung erfordern)
 - Ausreichende Berechtigungen zum Erstellen von Ressourcen
@@ -213,12 +218,14 @@ Deployment Name: gpt-4o
 **AWS Bedrock ist eine vollwertige Alternative zu Azure OpenAI.**
 
 **Vorteile:**
+
 - Exzellente Claude-Modelle von Anthropic
 - Verfügbarkeit in EU-Regionen (Frankfurt, Irland)
 - Gute Integration für AWS-Kunden
 - Häufig kostengünstiger als Azure OpenAI
 
 **Voraussetzungen:**
+
 - Aktives AWS-Konto
 - Zugriff auf AWS Bedrock Service
 - Ausreichende IAM-Berechtigungen
@@ -281,11 +288,13 @@ Model ID: anthropic.claude-3-5-sonnet-20240620-v1:0
 Die Plattform unterstützt lokale LLMs über **OpenAI-kompatible APIs**.
 
 **Unterstützte Tools:**
+
 - **Ollama** (einfachste Lösung) – https://ollama.ai
 - **vLLM** (höchste Performance)
 - **LM Studio** (GUI-basiert)
 
 **Empfohlene Modelle:**
+
 - **Llama 3.1 70B / Llama 3.3 70B** (sehr gute Qualität)
 - **Qwen 2.5 72B** (exzellent, multilingual)
 - **Mistral Large 2** (hohe Qualität)
@@ -298,6 +307,7 @@ Die Plattform unterstützt lokale LLMs über **OpenAI-kompatible APIs**.
 | 8B Modelle | 8-16 GB | RTX 4060 Ti | 16 GB |
 
 **Setup-Beispiel mit Ollama:**
+
 ```bash
 # Ollama installieren
 curl -fsSL https://ollama.ai/install.sh | sh
@@ -320,6 +330,7 @@ ollama pull llama3.1:70b
 | 50+ Nutzer | 300.000+ | Hohe Last |
 
 **Aufgabe des Kunden:**
+
 - **Azure OpenAI:** Token-Limits in Azure AI Foundry anpassen
 - **AWS Bedrock:** Service Quotas in AWS Console prüfen
 - **Lokale Modelle:** Ausreichende GPU-Kapazität bereitstellen
@@ -327,16 +338,19 @@ ollama pull llama3.1:70b
 ### 2.6 Kostenübersicht LLM-Provider
 
 **Azure OpenAI (ca., Stand 2026):**
+
 - GPT-4o: $5-15 pro 1M Token
 - GPT-4o-mini: $0.15-0.60 pro 1M Token
 - **Typisch (50 Nutzer): $100-500/Monat**
 
 **AWS Bedrock (ca., Stand 2026):**
+
 - Claude 3.5 Sonnet: $3-8 pro 1M Input, $15-24 pro 1M Output
 - Claude 3 Haiku: $0.25-1 pro 1M Input, $1.25-5 pro 1M Output
 - **Typisch (50 Nutzer): $80-400/Monat**
 
 **Lokale Modelle:**
+
 - Keine API-Kosten
 - Hardware-Investment: €5.000-50.000+
 - Laufende Stromkosten
@@ -387,6 +401,7 @@ Die Lösung besteht aus folgenden Docker-Containern:
 ## 5. Datenbank und Storage 
 
 **Datenhaltung:**
+
 - **SQLite:** Benutzerdaten, Metadaten, Logs
 - **SHARED_FOLDER:** Hochgeladene Dokumente, Konfigurationsdateien und Mount zum Docker
 - **ChromaDB:** Embeddings für RAG
@@ -404,6 +419,7 @@ Die Lösung besteht aus folgenden Docker-Containern:
 ### 7.1 TLS/HTTPS
 
 Obligatorisch für Produktion. Zertifikate:
+
 - Let's Encrypt (via Caddy)
 - DNS-01 (API-Token Provider)
 - Eigene Zertifikate (interne CA)
@@ -411,6 +427,7 @@ Obligatorisch für Produktion. Zertifikate:
 ### 7.2 Firewall
 
 **Ausgehende Verbindungen:**
+
 - **Immer:** Docker Hub / CGS Registry
 - **Je nach LLM-Provider:**
   - Azure OpenAI: `*.openai.azure.com`
@@ -430,6 +447,7 @@ Obligatorisch für Produktion. Zertifikate:
 ## 8. Backup und Recovery 
 
 **Vom Kunden zu sichern:**
+
 - Datenbank
 - SHARED_FOLDER 
 - Konfigurationsdateien
@@ -463,6 +481,7 @@ Obligatorisch für Produktion. Zertifikate:
 ### **Welchen LLM-Provider soll ich wählen?**
 
 **Empfehlung:**
+
 1. **Azure OpenAI** (bevorzugt) – wenn Sie Azure nutzen
 2. **AWS Bedrock** (gleichwertig) – wenn Sie AWS nutzen
 3. **Lokale Modelle** – höchster Datenschutz
@@ -493,6 +512,7 @@ Alle Anwendungsdaten auf Kundenserver. Bei Cloud-LLMs werden Anfragen zur Analys
 ### **Müssen wir für den LLM bezahlen?**
 
 **Ja** (bei Cloud):
+
 - Azure OpenAI: $100-500/Monat (50 Nutzer)
 - AWS Bedrock: $80-400/Monat (50 Nutzer)
 - Lokal: €0 API-Kosten, aber Hardware-Investment
@@ -504,24 +524,28 @@ Alle Anwendungsdaten auf Kundenserver. Bei Cloud-LLMs werden Anfragen zur Analys
 ### LLM-Provider Setup (wählen Sie EINEN)
 
 **Option A: Azure OpenAI (empfohlen)**
+
 - [ ] Azure-Abonnement verfügbar
 - [ ] Ressource erstellt
 - [ ] Modell deployed (gpt-4o)
 - [ ] API-Key + Endpoint notiert
 
 **Option B: AWS Bedrock (gleichwertig)**
+
 - [ ] AWS-Konto verfügbar
 - [ ] Model Access aktiviert
 - [ ] IAM-Credentials erstellt
 - [ ] Access Keys + Model ID notiert
 
 **Option C: Lokales Modell**
+
 - [ ] GPU-Server bereitgestellt
 - [ ] Ollama/vLLM installiert
 - [ ] Modell heruntergeladen
 - [ ] API-Endpoint getestet
 
 ### Infrastruktur
+
 - [ ] Linux-Server bereitgestellt
 - [ ] Docker + Docker Compose installiert
 - [ ] SHARED_FOLDER erstellt
