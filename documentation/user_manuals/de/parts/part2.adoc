@@ -1,4 +1,4 @@
-image::logo.png[Firmenlogo,align=left,width=50]
+image::../images/logo.png[Firmenlogo,align=left,width=60]
 
 === Kontakt
 

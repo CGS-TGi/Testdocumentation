@@ -68,5 +68,13 @@ table:
     
 chapter:
   label: ''
+  
+image-caption:
+  font_color: #006699
+  font_size: 10
+  font_style: italic
+  align: left
+  margin_top: 4
+  margin_bottom: 8
 
 
