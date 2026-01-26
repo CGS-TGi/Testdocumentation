@@ -1,5 +1,5 @@
 ifdef::cgs-assist[]
-image::../themes/logo.png[Firmenlogo,align=left,width=60]
+image::../themes/cgs-logo.png[Firmenlogo,align=left,width=60]
 endif::cgs-assist[]
 
 ifdef::arc-assist[]

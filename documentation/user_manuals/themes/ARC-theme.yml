@@ -22,8 +22,6 @@ title-page:
     font-color: '4F2F9C'
     align: left
     top-margin: 40
-  logo:
-    image: image:arc-logo.png
 
 base:
   font-color: '222222'
