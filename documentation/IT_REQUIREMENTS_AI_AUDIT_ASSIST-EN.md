@@ -76,14 +76,14 @@ A **writable directory** on the server for data exchange between containers and 
 
 If you want to use Caddy with automatic Let’s Encrypt TLS certificates:
 
-- **FQDN required:** Application must be reachable via a fully qualified domain name (e.g., `ai-audit-assist.yourcompany.com`)
+- **FQDN required:** Application must be reachable via a fully qualified domain name (e.g., `xxx-assist.yourcompany.com`)
 - **DNS resolution:** The FQDN must resolve to the public IP address of the server (A-record or CNAME)
 - **Port 80 accessible:** Must be reachable from the internet (for ACME HTTP challenge)
 
 **Caddyfile configuration example:**
 
 ~~~json
-ai-audit-assist.yourcompany.com {
+-assist.yourcompany.com {
     reverse_proxy cgs_assist_backend:8000
 }
 ~~~
@@ -135,7 +135,7 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 **Customer responsibility:**
 
 - Firewall rules for ports 80 and 443 (production) or 8000 (testing)
-- DNS configuration: A-record for the desired FQDN (e.g., 'ai-audit-assist.yourcompany.com') pointing to server IP
+- DNS configuration: A-record for the desired FQDN (e.g., 'xxx-assist.yourcompany.com') pointing to server IP
 - Provide FQDN for Caddyfile configuration
 - Optional: Own TLS certificates if Let's Encrypt is not used
 
@@ -184,7 +184,7 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 - **Subscription:** Select your Azure subscription
 - **Resource group:** Create or select one
 - **Region:** Select a region (e.g., West Europe, North Europe)
-- **Name:** Assign a unique name (e.g., ai-audit-assist-openai-prod)
+- **Name:** Assign a unique name (e.g., xxx-assist-openai-prod)
 - **Pricing tier:** Standard S0 or higher
 - **Review and create:** Click "Review + Create" and then "Create"
 
@@ -208,7 +208,7 @@ Access only via IP address: http://<server-ip>:8000 (recommended only for testin
 **Example:**
 
 ~~~bash
-Endpoint: https://ai-audit-assist-openai-prod.openai.azure.com/
+Endpoint: https://xxx-assist-openai-prod.openai.azure.com/
 API Key: 1234567890abcdef...
 Region: westeurope
 Deployment Name: gpt-4o

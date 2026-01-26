@@ -1,4 +1,4 @@
-# AI Audit Assist – Technische Bereitstellungsanforderungen
+# CGS Assist – Technische Bereitstellungsanforderungen
 
 Dieses Dokument richtet sich an IT-Infrastruktur und Systemadministratoren und beschreibt die technischen Voraussetzungen für die Bereitstellung und den Betrieb der AI Audit Assist Plattform beim Kunden.
 
@@ -74,14 +74,14 @@ Ein **beschreibbares Verzeichnis** auf dem Server für den Datenaustausch zwisch
 
 Wenn Sie Caddy mit automatischen Let's Encrypt TLS-Zertifikaten verwenden möchten:
 
-- **FQDN erforderlich:** Die Anwendung muss über einen vollständigen Domainnamen erreichbar sein (z.B. `ai-audit-assist.ihrefirma.de`)
+- **FQDN erforderlich:** Die Anwendung muss über einen vollständigen Domainnamen erreichbar sein (z.B. `xxx-assist.ihrefirma.de`)
 - **DNS-Auflösung:** Der FQDN muss auf die öffentliche IP-Adresse des Servers zeigen (A-Record oder CNAME)
 - **Port 80 erreichbar:** Muss aus dem Internet erreichbar sein (für ACME HTTP-Challenge)
 
 **Caddyfile-Konfiguration benötigt:**
 
 ~~~
-ai-audit-assist.ihrefirma.de {
+xxx-assist.ihrefirma.de {
     reverse_proxy cgs_assist_backend:8000
 }
 ~~~
@@ -133,13 +133,13 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
 **Aufgabe des Kunden:** 
 
 - Firewall-Freigabe für Ports 80 und 443 (Produktion) oder 8000 (Test)
-- DNS-Konfiguration: A-Record für den gewünschten FQDN (z. B. `ai-audit-assist.ihrefirma.de`) auf Server-IP
+- DNS-Konfiguration: A-Record für den gewünschten FQDN (z. B. `xxx-assist.ihrefirma.de`) auf Server-IP
 - Bereitstellung des FQDN für die Caddyfile-Konfiguration
 - Optional: Eigene TLS-Zertifikate, falls Let's Encrypt nicht verwendet werden soll
 
 ## 2. LLM-Provider – Bereitstellung durch den Kunden 
 
-**WICHTIG:** AI Audit Assist stellt **kein LLM** bereit. Der Kunde muss einen der folgenden LLM-Provider selbst einrichten und betreiben.
+**WICHTIG:** CGS Assist stellt **kein LLM** bereit. Der Kunde muss einen der folgenden LLM-Provider selbst einrichten und betreiben.
 
 ### 2.1 Übersicht der unterstützten LLM-Provider
 
@@ -183,7 +183,7 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
    - **Abonnement:** Wählen Sie Ihr Azure-Abonnement
    - **Ressourcengruppe:** Erstellen Sie eine neue oder wählen Sie eine bestehende
    - **Region:** Wählen Sie eine Region (z. B. West Europe, North Europe)
-   - **Name:** Vergeben Sie einen eindeutigen Namen (z. B. `ai-audit-assist-openai-prod`)
+   - **Name:** Vergeben Sie einen eindeutigen Namen (z. B. `xxx-assist-openai-prod`)
    - **Tarif:** Standard S0 oder höher
 4. **Überprüfen und erstellen:** Klicken Sie auf "Überprüfen + erstellen" und dann "Erstellen"
 
@@ -209,7 +209,7 @@ texttest.server.de {reverse_proxy cgs_assist_server:8000 header {
 **Beispiel:**
 
 ~~~
-Endpoint: https://ai-audit-assist-openai-prod.openai.azure.com/
+Endpoint: https://xxx-assist-openai-prod.openai.azure.com/
 API Key: 1234567890abcdef...
 Region: westeurope
 Deployment Name: gpt-4o
