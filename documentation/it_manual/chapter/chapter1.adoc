@@ -15,10 +15,10 @@ endif::arc-assist[]
 
 Der 
 ifdef::cgs-assist[] 
-CGS Assist
+{cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
-Arc Assist
+{arc-application}
 endif::arc-assist[]
  ist eine zentrale Softwarelösung zur Verwaltung und Pflege von Kundendaten im gesamten Unternehmen. Zu den Hauptfunktionen gehören:
 - Erfassung, Bearbeitung und Löschung von Kundendatensätzen
@@ -34,10 +34,10 @@ Die Anwendung ist als Web-Applikation konzipiert und ermöglicht autorisierten N
 
 Für die Nutzung von 
 ifdef::cgs-assist[] 
-CGS Assist
+{cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
-Arc Assist
+{arc-application}
 endif::arc-assist[]
  wird eine Unternehmenslizenz der 
  ifdef::cgs-assist[] 

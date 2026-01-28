@@ -4,10 +4,10 @@
 
 Für den produktiven Betrieb der Applikation 
 ifdef::cgs-assist[] 
-CGS Assist
+{cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
-Arc Assist
+{arc-application}
 endif::arc-assist[]
  gelten folgende Mindestanforderungen:
 - Server: 

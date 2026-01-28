@@ -4,10 +4,10 @@
 
 Dieses Handbuch dient als zentrale Dokumentation für die Installation, Konfiguration, den Betrieb, die Wartung sowie den Support der Applikation
 ifdef::cgs-assist[] 
-CGS Assist
+{cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
-Arc Assist
+{arc-application}
 endif::arc-assist[]
 . Es richtet sich an IT-Administratoren, Systembetreuer und technische Anwender, die für die Verwaltung und den sicheren Betrieb der Anwendung verantwortlich sind.
 
@@ -25,10 +25,10 @@ und stellt eine Basis zur Schulung von IT-Mitarbeitenden dar.
 
 Dieses Handbuch gilt für die Applikation 
 ifdef::cgs-assist[] 
-CGS Assist
+{cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
-Arc Assist
+{arc-application}
 endif::arc-assist[]
 und deren Einsatz innerhalb der IT-Infrastruktur des Unternehmens. 
 Es umfasst alle produktiven, Test- und Entwicklungsumgebungen, in denen die Applikation betrieben wird.
@@ -46,10 +46,10 @@ der internen IT liegen (z. B. durch externe Dienstleister betreute Systeme).
 
 Das Handbuch ist für alle internen IT-Mitarbeitenden sowie berechtigte externe Partner, die mit der Administration und dem Support der Anwendung 
 ifdef::cgs-assist[] 
-CGS Assist
+{cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
-Arc Assist
+{arc-application}
 endif::arc-assist[]
 betraut sind, verbindlich.
 
@@ -57,11 +57,11 @@ betraut sind, verbindlich.
 
 Das vorliegende Handbuch richtet sich in erster Linie an IT-Administratoren, Systembetreuer und technische Mitarbeitende des Unternehmens, die für die Installation, Konfiguration, 
 den Betrieb, die Wartung und den Support der Applikation 
-ifdef::cgs-assist[]
-CGS Assist
+ifdef::cgs-assist[] 
+{cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
-Arc Assist
+{arc-application}
 endif::arc-assist[] 
 verantwortlich sind.
 
@@ -77,12 +77,12 @@ Das Handbuch ist nicht für Endanwender oder Fachabteilungen bestimmt, sondern a
 Im Folgenden werden zentrale Begriffe und Abkürzungen aufgeführt, die in diesem Handbuch verwendet werden:
 
 - Applikation 
-ifdef::cgs-assist[]
-CGS Assist
+ifdef::cgs-assist[] 
+{cgs-application}
 endif::cgs-assist[]
 ifdef::arc-assist[]
-Arc Assist
-endif::arc-assist[] 
+{arc-application}
+endif::arc-assist[]
 : Die in diesem Handbuch behandelte Softwarelösung zur [kurze Funktionsbeschreibung, z. B. Verwaltung von Kundendaten].
 - Admin: IT-Administrator mit erweiterten Zugriffsrechten auf die Anwendung und zugehörige Systeme.
 - User: Allgemeiner Benutzer der Anwendung mit eingeschränkten Rechten.

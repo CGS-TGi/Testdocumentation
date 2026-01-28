@@ -24,6 +24,8 @@ endif::arc-assist[]
 :sectnumlevels: 7
 :cgs-assist: 1
 //:arc-assist: 1
+:arc-application: "Arc Assist"
+:cgs-application: "CGS Assist"
 
 include::chapter/intro.adoc[]
 

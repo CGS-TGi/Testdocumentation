@@ -2,7 +2,14 @@
 
 ==== Zugriffsschutz und Berechtigungsmanagement
 
-Der Zugriff auf "Kundenmanager Pro" ist durch ein mehrstufiges Berechtigungssystem sowie technische Schutzmaßnahmen abgesichert:
+Der Zugriff auf 
+ifdef::cgs-assist[] 
+{cgs-application}
+endif::cgs-assist[]
+ifdef::arc-assist[]
+{arc-application}
+endif::arc-assist[]
+ ist durch ein mehrstufiges Berechtigungssystem sowie technische Schutzmaßnahmen abgesichert:
 
 - Anmeldung erfolgt ausschließlich über personalisierte Benutzerkonten. Die Authentifizierung ist an das zentrale Active Directory angebunden (Single Sign-on).
 - Passwortrichtlinien entsprechen den unternehmenseigenen IT-Sicherheitsvorgaben (Mindestlänge, Komplexität, regelmäßiger Wechsel).
