@@ -9,9 +9,10 @@ endif::cgs-assist[]
 ifdef::arc-assist[]
 Arc Assist
 endif::arc-assist[]
-Es richtet sich an IT-Administratoren, Systembetreuer und technische Anwender, die für die Verwaltung und den sicheren Betrieb der Anwendung verantwortlich sind.
+. Es richtet sich an IT-Administratoren, Systembetreuer und technische Anwender, die für die Verwaltung und den sicheren Betrieb der Anwendung verantwortlich sind.
 
 Das Handbuch hat das Ziel, alle notwendigen Informationen strukturiert und nachvollziehbar bereitzustellen, um:
+
 - die ordnungsgemäße Inbetriebnahme und Konfiguration sicherzustellen,
 - einen störungsfreien und sicheren Betrieb der Applikation zu gewährleisten,
 - regelmäßig anfallende Wartungsaufgaben und Anpassungen fachgerecht durchzuführen,
@@ -33,6 +34,7 @@ und deren Einsatz innerhalb der IT-Infrastruktur des Unternehmens.
 Es umfasst alle produktiven, Test- und Entwicklungsumgebungen, in denen die Applikation betrieben wird.
 
 Der Geltungsbereich bezieht sich auf
+
 - die Installation und Konfiguration der Anwendung,
 - den täglichen Betrieb und die Wartung,
 - das IT-Sicherheitsmanagement (insbesondere Zugriffs- und Berechtigungsmanagement),

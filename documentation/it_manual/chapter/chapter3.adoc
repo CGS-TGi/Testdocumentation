@@ -2,7 +2,58 @@
 
 ==== Installationsanleitung (Schritt-für-Schritt)
 
+Die Installation von "Kundenmanager Pro" erfolgt in folgenden Schritten:
+
+1. Vorbereitungen 
+ 
+   - Prüfen Sie, ob alle Systemvoraussetzungen gemäß Kapitel 3 erfüllt sind.
+   - Legen Sie die Installationsmedien und die Lizenzdaten bereit.
+
+2. Installation des Datenbanksystems  
+
+   - Installieren Sie Microsoft SQL Server 2019 entsprechend den Herstellerangaben.
+   - Legen Sie eine dedizierte Datenbank „kundenmanagerpro“ an und richten Sie einen Benutzer mit administrativen Rechten ein.
+
+3. Installation des Webservers und der Laufzeitumgebungen  
+
+   - Installieren Sie IIS 10.0 (Windows) oder Apache 2.4 (Linux).
+   - Installieren Sie .NET 6.0 Runtime (Windows) bzw. OpenJDK 17 (Linux).
+
+4. Applikationsinstallation  
+
+   - Entpacken Sie das Installationspaket in das gewünschte Verzeichnis.
+   - Starten Sie das Setup und folgen Sie den Anweisungen des Installationsassistenten.
+   - Tragen Sie während der Installation die Verbindungsdaten zur Datenbank und zum Lizenzserver ein.
+
+5. Abschluss  
+
+   - Führen Sie nach Abschluss der Installation einen Neustart des Webservers durch.
+   - Testen Sie die Erreichbarkeit der Webapplikation im Browser.
+
 ==== Erstkonfiguration der Anwendung
 
+Nach erfolgter Installation sind folgende Initialkonfigurationen vorzunehmen:
+
+- Administrator-Konto einrichten und Kennwort vergeben.
+- Firmendaten und Standardeinstellungen im Verwaltungsbereich hinterlegen (z. B. Zeitzone, Geschäftssprache).
+- E-Mail-Server konfigurieren (SMTP-Zugangsdaten, Absenderadresse).
+- Benutzer und Rollen entsprechend dem Berechtigungskonzept anlegen.
+- Backup-Intervall und Speicherort für Datensicherungen definieren.
+- Integration zu Drittsystemen (z. B. Dokumentenmanagement, ERP) einrichten.
+
+Die Erstkonfiguration soll mit der IT-Sicherheitsrichtlinie sowie den Vorgaben aus dem Berechtigungskonzept abgestimmt werden.
+
 ==== Update-/Upgrade-Prozess
+
+Der Update- und Upgrade-Prozess gestaltet sich wie folgt:
+
+- Vor jedem Update sind vollständige Backups der Anwendung und der Datenbank zu erstellen.
+- Prüfen Sie die Release Notes und Kompatibilitätslisten der neuen Version.
+- Stoppen Sie den Applikationsdienst bzw. setzen Sie die Anwendung in den Wartungsmodus.
+- Ersetzen Sie die Anwendungsdateien durch die neue Version gemäß Updateanleitung.
+- Führen Sie ggf. erforderliche Migrationsschritte für die Datenbank durch (siehe Update-Guide des Herstellers).
+- Starten Sie die Anwendung neu und prüfen Sie die korrekte Funktion in der Testumgebung.
+- Dokumentieren Sie den erfolgten Update-Vorgang und die Versionsnummer im Änderungsprotokoll.
+
+Nach Abschluss des Updates ist das Benutzerumfeld zu informieren und bei Bedarf eine Kurzanleitung zu veröffentlichen.
 

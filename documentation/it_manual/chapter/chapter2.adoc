@@ -2,6 +2,40 @@
 
 ==== Hardwareanforderungen
 
+Für den produktiven Betrieb der Applikation 
+ifdef::cgs-assist[] 
+CGS Assist
+endif::cgs-assist[]
+ifdef::arc-assist[]
+Arc Assist
+endif::arc-assist[]
+ gelten folgende Mindestanforderungen:
+- Server: 
+  - 4 CPU-Kerne (mindestens 2,5 GHz)
+  - 16 GB RAM
+  - 500 GB freier Festplattenspeicher (SSD empfohlen)
+  - Gigabit-Netzwerkanschluss
+- Client-Arbeitsplätze:
+  - 2 CPU-Kerne
+  - 8 GB RAM
+  - 5 GB freier Speicherplatz
+  - Bildschirmauflösung mind. 1920x1080 Pixel
+
 ==== Softwarevoraussetzungen (Betriebssystem, Laufzeitumgebungen)
 
+- Server-Betriebssystem: Microsoft Windows Server 2019 oder höher (alternativ: Ubuntu Server 22.04 LTS)
+- Datenbank: Microsoft SQL Server 2019 oder PostgreSQL 13
+- Webserver: IIS 10.0 (bei Windows) oder Apache 2.4 (bei Linux)
+- Laufzeitumgebungen: .NET 6.0 Runtime (bei Windows), OpenJDK 17 (bei Linux)
+- Clients: Windows 10/11 oder macOS 12 oder höher, aktueller Chrome- oder Firefox-Browser
+
 ==== Notwendige Drittanbieter-Komponenten
+
+Folgende Drittanbieter-Komponenten sind für den störungsfreien Betrieb erforderlich und müssen vor der Installation bereitgestellt werden:
+
+- Crystal Reports Runtime 13 für die Berichtsfunktion
+- SMTP-Mailserver für den E-Mail-Versand
+- Antivirus-Software mit Ausnahme für Installationsverzeichnis und Datenbankport
+- Optional: ElasticSearch (ab Version 7.17) für erweiterte Suchfunktionen
+
+Der Bezug und die Wartung der Drittanbieter-Komponenten liegen im Verantwortungsbereich der IT-Abteilung.

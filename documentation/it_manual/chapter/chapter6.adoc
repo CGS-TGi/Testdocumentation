@@ -2,9 +2,48 @@
 
 ==== Bekannte Fehler und deren Lösungen (FAQ)
 
+- Fehler: Die Anwendung startet nicht im Browser.
+  Lösung: Prüfen Sie, ob der Webserver-Dienst läuft und die Firewall die entsprechenden Ports (80/443) freigibt. Kontrollieren Sie zudem, ob die Konfigurationsdatei „web.config“ korrekt hinterlegt ist.
+
+- Fehler: Benutzer kann sich nicht anmelden.
+  Lösung: Stellen Sie sicher, dass der Benutzer im Active Directory aktiv ist und die zugewiesene Rolle in der Benutzerverwaltung der Applikation korrekt hinterlegt wurde. Nach fünf fehlgeschlagenen Versuchen ist das Konto 15 Minuten gesperrt.
+
+- Fehler: E-Mail-Benachrichtigungen werden nicht versendet.
+  Lösung: Überprüfen Sie die SMTP-Konfiguration in den Anwendungseinstellungen und stellen Sie die Erreichbarkeit des E-Mail-Servers sicher.
+
+- Fehler: „Datenbankverbindung fehlgeschlagen“.
+  Lösung: Kontrollieren Sie die Erreichbarkeit und den Status der Datenbank und prüfen Sie die Zugangsdaten der Verbindungszeichenfolge in der Konfigurationsdatei.
+
 ==== Fehlermeldungen und deren Bedeutung
 
+- „HTTP 500 – Internal Server Error“  
+  Interner Serverfehler. Ursache kann eine fehlerhafte Konfiguration oder ein Problem im Anwendungscode sein.
+
+- „Datenbankverbindung fehlgeschlagen“  
+  Die Anwendung kann keine Verbindung zur hinterlegten Datenbank aufbauen. Überprüfen Sie die Netzwerkverbindung, den Datenbankdienst und die Anmeldedaten.
+
+- „Zugriff verweigert – unzureichende Berechtigung“  
+  Der angemeldete Benutzer besitzt nicht die erforderlichen Rechte für die gewünschte Funktion. Rollen- und Rechteprüfung erforderlich.
+
+- „Lizenz abgelaufen“  
+  Die Anwendungslizenz ist abgelaufen oder konnte nicht geprüft werden. Lizenzdaten im Adminbereich prüfen und ggf. verlängern.
+
 ==== Supportprozess und Kontaktinformationen
+
+Supportprozess:
+
+- Der Anwender meldet auftretende Probleme oder Fehler im zentralen Ticketsystem.
+- Ein IT-Supportmitarbeiter nimmt das Ticket auf und kategorisiert die Anfrage nach Dringlichkeit.
+- Die Erstbearbeitung erfolgt innerhalb des vereinbarten SLA-Zeitrahmens (Standard: 8 Stunden).
+- Bei Bedarf wird das Anliegen an das Applikationsmanagement oder den externen Hersteller eskaliert.
+- Nach Lösung des Problems dokumentiert der IT-Support die Maßnahmen und schließt das Ticket.
+
+Kontaktinformationen:
+
+- IT-Support-Hotline: +49 123 456 7890
+- E-Mail: support@unternehmen.de
+- Servicezeiten: Montag bis Freitag, 08:00 – 18:00 Uhr
+- Notfallrufnummer (außerhalb der Geschäftszeiten): +49 123 456 7891
 
 
 

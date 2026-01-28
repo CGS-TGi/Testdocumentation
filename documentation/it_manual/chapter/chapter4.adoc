@@ -2,13 +2,73 @@
 
 ==== Start und Stopp der Anwendung
 
+Starten der Anwendung:
+
+- Melden Sie sich am Server mit administrativen Rechten an.
+- Starten Sie den „Kundenmanager Pro“-Dienst über die Dienstverwaltung (Windows: Dienste.msc; Linux: systemctl start kundenmanager).
+- Prüfen Sie, ob der Webserver und die Datenbankverbindung aktiv sind.
+- Testen Sie den Zugriff auf die Weboberfläche über den Browser.
+
+Beenden der Anwendung:
+
+- Informieren Sie die Benutzer über die geplante Abschaltung.
+- Fahren Sie den „Kundenmanager Pro“-Dienst geordnet herunter (Windows: Dienste.msc; Linux: systemctl stop kundenmanager).
+- Beenden Sie ggf. geplante Hintergrundjobs und sichern Sie offene Datenbanktransaktionen.
+
 ==== Beschreibung der Betriebsprozesse
+
+Der tägliche Betrieb umfasst folgende Standardprozesse:
+
+- Überwachung der Systemverfügbarkeit und -leistung
+- Datensicherung laut Backup-Konzept
+- Bereitstellung von Benutzer-Support bei Anfragen oder Störungen
+- Durchführung von Routineprüfungen (Logfiles, Systemressourcen)
+- Einspielung sicherheitsrelevanter Updates nach Freigabe
+
+Regelmäßige Aufgaben sind im Wartungsplan dokumentiert und werden durch das IT-Team gemäß der definierten Zeitfenster ausgeführt.
 
 ==== Benutzerverwaltung / Rollen & Rechte
 
+Die Benutzerverwaltung erfolgt zentral in der Administrationsoberfläche der Applikation. Verantwortlichkeiten:
+
+- Anlegen, Bearbeiten und Löschen von Benutzerkonten
+- Zuweisen von Rollen wie „Leser“, „Bearbeiter“, „Administrator“
+- Festlegen individueller Rechte für bestimmte Funktionsbereiche (z. B. Reporting, Exporte)
+- Regelmäßige Überprüfung aktiver Benutzer und Rechte (mindestens halbjährlich)
+
+Das Berechtigungskonzept entspricht den organisatorischen und datenschutzrechtlichen Vorgaben.
+
 ==== Anbindung an andere Systeme (Schnittstellen, APIs)
+
+Die Anwendung ist über folgende Schnittstellen und APIs mit anderen Systemen verbunden:
+
+- REST-API zur Integration mit dem zentralen Dokumentenmanagement (Endpoint: /api/dms/v1)
+- LDAP-Anbindung für Single Sign-on und Benutzerabgleich mit dem Active Directory
+- E-Mail-Schnittstelle (SMTP/IMAP) für automatisierte Benachrichtigungen
+- Export/Import-Modul für CSV- und XLSX-basierte Datenübergabe
+
+Die Schnittstellen werden regelmäßig auf ihre Funktionsfähigkeit geprüft und dokumentierte Änderungen am API-Standard werden frühzeitig implementiert.
 
 ==== Backup und Recovery der Applikation
 
+Die Applikation wird täglich automatisiert gesichert:
+
+- Tägliches Vollbackup der Datenbank um 2:00 Uhr nachts auf das gesicherte Backup-Laufwerk
+- Wöchentliches Backup der Anwendungsdateien
+- Monatliche Überprüfung auf Restore-Fähigkeit durch Rücksicherung in eine Testumgebung
+
+Wiederherstellung (Recovery):
+
+- Auswahl der letzten konsistenten Datensicherung
+- Rückspielen der Datenbank auf den Stand vor dem Fehler
+- Kopieren der erforderlichen Applikationsdateien
+- Funktionstest und Freigabe durch die IT-Abteilung
+
 ==== Überwachung/Monitoring
+
+Das Monitoring erfolgt mittels zentralem Überwachungstool (z. B. PRTG, Nagios):
+- Überwachung der Erreichbarkeit und Auslastung des Webservers und der Datenbank
+- Benachrichtigung bei kritischen Ereignissen (z. B. Systemfehler, Speicherprobleme, Ausfall der Schnittstellen)
+- Regelmäßige Auswertung der Logfiles auf sicherheitsrelevante Vorfälle
+- Bei Störungen wird automatisch ein Incident im Ticketsystem erzeugt und das IT-Team alarmiert
 

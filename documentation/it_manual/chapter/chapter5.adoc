@@ -2,10 +2,36 @@
 
 ==== Zugriffsschutz und Berechtigungsmanagement
 
-==== Beschreibung der Betriebsprozesse
+Der Zugriff auf "Kundenmanager Pro" ist durch ein mehrstufiges Berechtigungssystem sowie technische Schutzmaßnahmen abgesichert:
+
+- Anmeldung erfolgt ausschließlich über personalisierte Benutzerkonten. Die Authentifizierung ist an das zentrale Active Directory angebunden (Single Sign-on).
+- Passwortrichtlinien entsprechen den unternehmenseigenen IT-Sicherheitsvorgaben (Mindestlänge, Komplexität, regelmäßiger Wechsel).
+- Der Zugriff auf sensible Daten und Administrationsfunktionen ist ausschließlich ausgewählten Benutzerrollen vorbehalten.
+- Nach fünf fehlgeschlagenen Anmeldeversuchen wird das Benutzerkonto vorübergehend gesperrt.
+- Verschlüsselung des Datenverkehrs zwischen Client und Server durch TLS 1.2 oder höher.
 
 ==== Datenschutzrelevante Einstellungen und Funktionen
 
+Um den Anforderungen der DSGVO und internen Datenschutzrichtlinien gerecht zu werden, bietet die Applikation folgende Funktionen:
+
+- Möglichkeit zur gezielten Anonymisierung und Löschung personenbezogener Daten („Recht auf Vergessenwerden“)
+- Protokollierung von Verarbeitungsvorgängen relevanter personenbezogener Daten
+- Konfigurierbare Aufbewahrungsfristen für bestimmte Datenarten
+- Rollenbasierter Zugriffsschutz auf datenschutzsensible Bereiche
+- Hinweismeldungen und Abfragedialoge bei Verarbeitungen risikoreicher personenbezogener Daten
+
+Datenschutzrelevante Einstellungen werden regelmäßig durch den Datenschutzbeauftragten kontrolliert und dokumentiert.
+
 ==== Protokollierung und Logging
+
+Es werden umfangreiche Protokolle (Logs) zur Sicherstellung von Nachvollziehbarkeit und zum Erkennen sicherheitsrelevanter Ereignisse geführt:
+
+- Anmeldung, Logout, fehlgeschlagene Anmeldeversuche und Passwortänderungen werden protokolliert.
+- Änderungen an sensiblen Daten (z. B. Löschvorgänge, Rechtevergaben) werden detailliert, inkl. Zeitstempel und Benutzer, erfasst.
+- Die Logfiles werden automatisch zentral archiviert und vor unbefugtem Zugriff geschützt.
+- Logdaten werden mindestens 12 Monate aufbewahrt und regelmäßig auf Sicherheitsvorfälle ausgewertet.
+- Bei Verdacht auf einen Datenschutz- oder Sicherheitsvorfall erfolgt eine sofortige Meldung an den IT-Sicherheitsbeauftragten.
+
+Die Protokollierungs- und Löschkonzepte werden jährlich überprüft und bei Bedarf gemäß rechtlichen Vorgaben angepasst.
 
 
