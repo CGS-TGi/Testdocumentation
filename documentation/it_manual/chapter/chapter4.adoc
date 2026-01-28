@@ -1,4 +1,4 @@
-==== Betrieb der Anwendung
+=== Betrieb der Anwendung
 
 ==== Start und Stopp der Anwendung
 
