@@ -2,14 +2,7 @@
 
 ==== Hardwareanforderungen
 
-Für den produktiven Betrieb der Applikation 
-ifdef::cgs-assist[] 
-{cgs-application}
-endif::cgs-assist[]
-ifdef::arc-assist[]
-{arc-application}
-endif::arc-assist[]
- gelten folgende Mindestanforderungen:
+Für den produktiven Betrieb der Applikation {application} gelten folgende Mindestanforderungen:
  
 ===== Entry Level (RAG, 8 GB RAM)
 
@@ -69,7 +62,7 @@ Für große Datenmengen, hohe Nutzerzahlen oder rechenintensive Aufgaben:
 
 Folgende Drittanbieter-Komponenten sind für den störungsfreien Betrieb erforderlich und müssen vor der Installation bereitgestellt werden:
 
-**WICHTIG:** CGS Assist stellt **kein LLM** bereit. Der Kunde muss einen der folgenden LLM-Provider selbst einrichten und betreiben.
+**WICHTIG:**{application} stellt **kein LLM** bereit. Der Kunde muss einen der folgenden LLM-Provider selbst einrichten und betreiben.
 
 *Übersicht der unterstützten LLM-Provider*
 

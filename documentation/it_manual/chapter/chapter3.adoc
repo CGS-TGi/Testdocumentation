@@ -2,21 +2,14 @@
 
 ==== Deployment-Anleitung (Schritt-für-Schritt)
 
-Das Deployment von 
-ifdef::cgs-assist[] 
-{cgs-application}
-endif::cgs-assist[]
-ifdef::arc-assist[]
-{arc-application}
-endif::arc-assist[]
- erfolgt in folgenden Schritten:
+Das Deployment von {application} erfolgt in folgenden Schritten:
 
 1. Voraussetzungen
 
 - *Docker* und *Docker Compose* sind installiert.
 - Die Dateien ``docker-compose.yml`` und ``.env`` befinden sich im Arbeitsverzeichnis.
 
-2. Login in unser Docker Hub-Repository
+2. Login in unser DockerHub-Repository
   
 - Nutzen Sie den bereitgestellten Read-Access-Token: ``docker login -u cgsmbh -p [ACCESS_TOKEN]``
 

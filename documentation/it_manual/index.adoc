@@ -6,7 +6,7 @@ ifdef::arc-assist[]
 image::themes/arc_logo_gross.png[Firmenlogo,align=left,width=60]
 endif::arc-assist[]
 
-= Arc Assist: IT-Handbuch
+= AI Audit Assist: IT-Handbuch
 //= CGS Assist: KI-Plattform für den Mittelstand - IT-Handbuch
 :doctype: book
 :author: AI Audit Institut
@@ -25,8 +25,8 @@ endif::arc-assist[]
 :sectnumlevels: 7
 //:cgs-assist: 1
 :arc-assist: 1
-:arc-application: "Arc Assist"
-//:cgs-application: "CGS Assist"
+:application: "AI Audit Assist"
+//:application: "CGS Assist"
 //:only-for-concret-customer: 1
 
 include::chapter/intro.adoc[]

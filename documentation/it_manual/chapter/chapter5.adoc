@@ -2,14 +2,7 @@
 
 ==== Zugriffsschutz und Berechtigungsmanagement
 
-Der Zugriff auf 
-ifdef::cgs-assist[] 
-{cgs-application}
-endif::cgs-assist[]
-ifdef::arc-assist[]
-{arc-application}
-endif::arc-assist[]
- ist durch ein mehrstufiges Berechtigungssystem sowie technische Schutzmaßnahmen abgesichert:
+Der Zugriff auf {application} ist durch ein mehrstufiges Berechtigungssystem sowie technische Schutzmaßnahmen abgesichert:
 
 - Anmeldung erfolgt ausschließlich über das vom Kunden gewählte und konfigurierte Anmeldeverfahren (über die lokale Benutzer-/Passwortverwaltung
 (LDAP des Kunden, DB des Kunden), über Microsoft Entra ID (ehemals Azure AD/Entra) (OIDC/SAML), über API-Token für Integrationen)

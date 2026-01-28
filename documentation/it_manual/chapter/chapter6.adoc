@@ -87,12 +87,7 @@ endif::arc-assist[]
 *RACI-Matrix* 
 
 |===
-ifdef::cgs-assist[]
 | *Bereich* |  *{author}* | *Kunde*
-endif::cgs-assist[]
-ifdef::arc-assist[]
-| *Bereich* |  *{author}* | *Kunde*
-endif::arc-assist[]
 
 | Infrastruktur | Consult | Responsible 
 | Docker Images | Responsible | Informed 
