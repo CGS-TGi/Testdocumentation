@@ -14,7 +14,6 @@ endif::arc-assist[]
 - Anmeldung erfolgt ausschließlich über personalisierte Benutzerkonten. Die Authentifizierung ist an das zentrale Active Directory angebunden (Single Sign-on).
 - Passwortrichtlinien entsprechen den unternehmenseigenen IT-Sicherheitsvorgaben (Mindestlänge, Komplexität, regelmäßiger Wechsel).
 - Der Zugriff auf sensible Daten und Administrationsfunktionen ist ausschließlich ausgewählten Benutzerrollen vorbehalten.
-- Nach fünf fehlgeschlagenen Anmeldeversuchen wird das Benutzerkonto vorübergehend gesperrt.
 - Verschlüsselung des Datenverkehrs zwischen Client und Server durch TLS 1.2 oder höher.
 
 ==== Datenschutzrelevante Einstellungen und Funktionen

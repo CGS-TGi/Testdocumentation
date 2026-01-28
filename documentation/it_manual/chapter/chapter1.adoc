@@ -58,7 +58,7 @@ ifdef::arc-assist[]
 {arc-application}
 endif::arc-assist[]
  wird eine Unternehmenslizenz der 
- ifdef::cgs-assist[] 
+ifdef::cgs-assist[] 
 CGS 
 endif::cgs-assist[]
 ifdef::arc-assist[]
