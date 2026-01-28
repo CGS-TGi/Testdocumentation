@@ -1,5 +1,12 @@
+ifdef::cgs-assist[]
+image::../../themes/cgs-logo.png[Firmenlogo,align=left,width=60]
+endif::cgs-assist[]
 
-image::logo.png[Firmenlogo,align=left,width=50]
+ifdef::arc-assist[]
+image::../../themes/arc_logo_gross.png[Firmenlogo,align=left,width=60]
+endif::arc-assist[]
+
+ifdef::cgs-assist[]
 
 === Ihr Partner für Künstliche Intelligenz 
 
@@ -25,3 +32,22 @@ sfranz@cgs-online.de
 Tel. (+49) 531 / 1209-384 
 
 Mobil (+49) 177 / 792 8366
+
+endif::cgs-assist[]
+
+ifdef::cgs-assist[]
+
+*Unternehmen* 
+
+Eine Straße 1 
+
+1111 Stadt
+
+*Beratung & Vertrieb*
+
+Eine Straße 1 
+
+1111 Stadt
+
+
+endif::cgs-assist[]
