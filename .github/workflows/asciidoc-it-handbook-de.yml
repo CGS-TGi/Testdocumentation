@@ -22,9 +22,6 @@ on:
         type: environment
         required: true
 
-env:
-  REVISION: 1.0.0
-
 jobs:
   test:
     runs-on: ubuntu-latest
