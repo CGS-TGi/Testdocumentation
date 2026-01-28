@@ -1,0 +1,8 @@
+=== Installation und Konfiguration
+
+==== Installationsanleitung (Schritt-für-Schritt)
+
+==== Erstkonfiguration der Anwendung
+
+==== Update-/Upgrade-Prozess
+

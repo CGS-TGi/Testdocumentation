@@ -1,0 +1,14 @@
+==== Betrieb der Anwendung
+
+==== Start und Stopp der Anwendung
+
+==== Beschreibung der Betriebsprozesse
+
+==== Benutzerverwaltung / Rollen & Rechte
+
+==== Anbindung an andere Systeme (Schnittstellen, APIs)
+
+==== Backup und Recovery der Applikation
+
+==== Überwachung/Monitoring
+

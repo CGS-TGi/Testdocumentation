@@ -1,0 +1,7 @@
+=== Allgemeine Informationen zur Applikation
+
+==== Name und Version der Applikation
+
+==== Übersicht und Funktionen
+
+==== Lizenzinformationen

@@ -1,0 +1,7 @@
+=== Systemvoraussetzungen und Abhängigkeiten
+
+==== Hardwareanforderungen
+
+==== Softwarevoraussetzungen (Betriebssystem, Laufzeitumgebungen)
+
+==== Notwendige Drittanbieter-Komponenten
