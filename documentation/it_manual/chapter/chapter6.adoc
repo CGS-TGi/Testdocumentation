@@ -88,13 +88,8 @@ endif::arc-assist[]
 
 |===
 | *Bereich* | 
-ifdef::cgs-assist[] 
-*{cgs-application}*
-endif::cgs-assist[]
-ifdef::arc-assist[]
-*{arc-application}*
-endif::arc-assist[]| *Kunde*
-
+ifdef::cgs-assist[] *{cgs-application}* endif::cgs-assist[] 
+ifdef::arc-assist[] *{arc-application}* endif::arc-assist[]| *Kunde*
 | Infrastruktur | Consult | Responsible 
 | Docker Images | Responsible | Informed 
 | LLM-Provider Setup | Consult | Responsible 
