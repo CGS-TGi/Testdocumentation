@@ -52,9 +52,9 @@ Die Erstkonfiguration soll mit der IT-Sicherheitsrichtlinie sowie den Vorgaben a
 
 ==== Update-/Upgrade-Prozess
 
-Der Update- und Upgrade-Prozess gestaltet sich wie folgt:
+Der Update- und Upgrade-Prozess, durchgeführt vom Kunden gestaltet sich wie folgt:
 
-- Vor jedem Update sind vom Kunden vollständige Backups der Anwendung und der Datenbank zu erstellen.
+- Vor jedem Update sind vollständige Backups der Anwendung und der Datenbank zu erstellen.
 - Prüfen Sie die Release Notes und Kompatibilitätslisten der neuen Version.
 - Stoppen Sie den Applikationsdienst bzw. setzen Sie die Anwendung in den Wartungsmodus.
 - Ersetzen Sie die Anwendungsdateien durch die neue Version gemäß Updateanleitung.

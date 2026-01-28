@@ -84,6 +84,20 @@ ifdef::arc-assist[]
 
 endif::arc-assist[]
 
+*RACI-Matrix* 
+
+|===
+| *Bereich* | *CGS* | *Kunde*
+
+| Infrastruktur | Consult | Responsible 
+| Docker Images | Responsible | Informed 
+| LLM-Provider Setup | Consult | Responsible 
+| LLM-Provider Kosten | Informed | Accountable 
+| Datenbank | Consult | Responsible 
+| Backups | Consult | Responsible 
+| Applikations-Updates| Responsible | Accountable 
+| Security-Patches (OS) | Consult | Responsible 
+|===
 
 
 
