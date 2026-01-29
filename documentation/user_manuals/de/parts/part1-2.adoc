@@ -5,7 +5,7 @@ die Speicherordner der Dokumente (RAG), Konfigurationen der Schnittstellen, die 
 hinterlegten Anwendungsfälle verwaltet werden.
 Der Zugriff auf diese Funktionen der Administration erfolgt über eine systemseitige, festgelegte Rolle.
 
-image::../images/Abbildung-15.jpg[Administration, title="Administration"]
+image::../images/Abbildung-15.jpg[Administration, title="Administration", width=150]
 
 ==== Benutzerverwaltung
 

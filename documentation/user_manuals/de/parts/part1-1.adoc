@@ -15,7 +15,7 @@ image::../images/cgs-Abbildung-4.jpg[Navigationsbereich KI Chat  - speichern, ti
 Um einen Chat umzubenennen, kann der Edit Button (Stift) benutz werden.
 Um einen Chat im linken Baummenü zu löschen, muss zuerst der Löschen Button betätigt werden und danach das Löschen mit Klick auf den Haken bestätigt werden.
 
-image::../images/Abbildung-5.jpg[Navigationsbereich KI Chat  - löschen, title="Navigationsbereich KI Chat  - löschen"]
+image::../images/Abbildung-5.jpg[Navigationsbereich KI Chat  - löschen, title="Navigationsbereich KI Chat  - löschen", width=200]
 
 ==== Navigationsbereich "Anwendungsfälle" 
 
@@ -55,7 +55,7 @@ image::../images/Abbildung-27.jpg[Navigationsbereich - Automatisierung, title="N
 Zum Öffnen eine Feed wird auf das Symbol mit Namen geklickt.
 In der Übersicht werden alle gespeicherten Zeitpläne angezeigt. Es können hier neue Zeitpläne erstellt werden und/oder vorhandene gelöscht werden.
 
-image::../images/Abbildung-26.jpg[Navigationsbereich - Automatisierung - Zeitpläne, title="Navigationsbereich - Automatisierung - Zeitpläne"]
+image::../images/Abbildung-26.jpg[Navigationsbereich - Automatisierung - Zeitpläne, title="Navigationsbereich - Automatisierung - Zeitpläne", width=150]
 
 Im Bereich Ausführungsprotokolle werden alle Programmläufe gelistet. Über einen Button können die genauen Details angesehen werden.
 
@@ -77,7 +77,7 @@ image::../images/Abbildung-12.jpg[Navigationsbereich - Dokumente - Baum löschen
 In der Baumnavigation werden nur die Ordner gelistet, auf die der Anwender berechtigt ist. 
 Die Zuordnung der Dokumente zu den jeweiligen Ordnern erfolgt in der Administration
 
-image::../images/Abbildung-33.jpg[Navigationsbereich - Dokumente - Baumnavigation, title="Navigationsbereich - Dokumente - Baumnavigation"]
+image::../images/Abbildung-33.jpg[Navigationsbereich - Dokumente - Baumnavigation, title="Navigationsbereich - Dokumente - Baumnavigation", width=150]
 
 Die Dokumente können über einen Button heruntergeladen werden und manuell die Ansicht aktualisiert werden. Da es bei sehr vielen Dokumenten zu Zeitverzögerungen kommen kann wurde ein Lazy-Loading implementiert.
 Deshalb können über das Reload Icon die einzelnen Embeddings, also Teildokumente, manuel nachgeladen werden. 
