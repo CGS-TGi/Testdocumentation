@@ -66,11 +66,7 @@ table:
   body:
     font-color: '222222'
   border-collapse: collapse;
-  width: auto;
-  table-layout: auto;
-  display: inline-table;
-  margin: 1em 0;
-    
+
 chapter:
   label: ''
   
