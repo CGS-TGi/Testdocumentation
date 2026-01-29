@@ -1,22 +1,22 @@
 
 ifdef::cgs-assist[]
-image::../../themes/cgs-logo.png[Firmenlogo,align=left, width=60]
+image::../../themes/cgs-logo.png[Firmenlogo, align=left, width=60]
 endif::cgs-assist[]
 
 ifdef::arc-assist[]
-image::../../themes/arc_logo_gross.png[Firmenlogo,align=left]
+image::../../themes/arc_logo_gross.png[Firmenlogo, align=left, , width=100]
 endif::arc-assist[]
 
 === Kontakt
 
 ifdef::cgs-assist[]
-Firma CGS
+Firma {author}
 
-Straße 1
+Straße 199999
 
-00000 Stadt
+00990 Stadt
 
-Tel.:	
+Tel.:	999999
 
 Fax:	
 
@@ -24,12 +24,12 @@ Web:
 endif::cgs-assist[]	
 
 ifdef::arc-assist[]
-Firma ARC
+Firma {author}
 
-Straße 1
-00000 Stadt
+Straße 177777
+000777 Stadt
 
-Tel.:	
+Tel.:	777777
 
 Fax:	
 
