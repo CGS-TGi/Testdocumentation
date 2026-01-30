@@ -58,10 +58,13 @@ jobs:
           -a pdf-theme=CGS -a pdf-themesdir=documentation/user_manuals/themes \
           -o Handbuch_DE_${REVISION}.pdf documentation/user_manuals/de/index.adoc
 
+          echo "REVISION is: $REVISION"
+          ls -l documentation/user_manuals/de/
+
       - name: Upload documentation artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Handbuch_DE
+          name: Handbuch_DE_${REVISION}
           path: |
             documentation/user_manuals/de/Handbuch_DE_${REVISION}.pdf
             documentation/user_manuals/de/Handbuch_DE_${REVISION}.html
