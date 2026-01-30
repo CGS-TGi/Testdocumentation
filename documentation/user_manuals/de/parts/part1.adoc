@@ -36,7 +36,7 @@ Die Farben kennzeichnen das Hinweislevel wie folgt:
 
 |===
 |grün	| Erfolgreiche Ausführung der Aktion
-|blau	| Allgemeiner Hinweis über der Aktion
+|blau	| Allgemeiner Hinweis über eine Aktion
 |rot	| Fehler bei Ausführung der Aktion
 |=== 
 

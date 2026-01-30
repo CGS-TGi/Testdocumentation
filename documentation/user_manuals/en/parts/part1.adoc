@@ -38,4 +38,4 @@ The colors indicate the notification level as follows:
 |red	| Error during execution of the action
 |===
 
-image::../images/Abbildung-confirm.jpg[Hinweise, title="Hinweise", width=400]
+image::../images/Abbildung-confirm.jpg[Notifications, title="Notifications", width=400]
