@@ -50,7 +50,7 @@ jobs:
           asciidoctor -D documentation/it_manual/ \
           -o IT-Handbuch_DE.html documentation/it_manual/index.adoc
           asciidoctor-pdf -D documentation/it_manual/ \
-          -a big-output=1
+          -a big-output=1 \
           -a pdf-theme=CGS \
           -a pdf-themesdir=documentation/it_manual/themes \
           -o IT_Handbuch_DE.pdf documentation/it_manual/index.adoc
@@ -61,5 +61,5 @@ jobs:
           name: IT-Handbuch_DE
           path: |
             documentation/it_manual/IT_Handbuch_DE.pdf
-            documentation/it_manual/index.html
+            documentation/it_manual/IT-Handbuch_DE.html
 
