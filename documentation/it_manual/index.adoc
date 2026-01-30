@@ -12,7 +12,7 @@ endif::arc-assist[]
 //:author: AI Audit Institut
 :author: CGS Software and Data
 :revdate: 02.02.2026
-:revnumber: 1.0
+:revnumber: 0 default, kommt vom run
 :toc: left
 :toc-interactive: true // in pdf the active section will be highlighted
 :toc-mode: offcanvas
