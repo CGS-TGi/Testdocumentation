@@ -48,6 +48,7 @@ jobs:
       - name: Build HTML and PDF docs
         run: |
           asciidoctor -D documentation/it_manual/ \
+          -a big-output=1 \
           -o IT-Handbuch_DE.html documentation/it_manual/index.adoc
           asciidoctor-pdf -D documentation/it_manual/ \
           -a big-output=1 \
