@@ -4,7 +4,7 @@
 
 include::IT_ARCHITEKTURE-DESCRIPTION.adoc[]
 
-=== Versionshistorie
+=== Versionshistorie Dokument
 
 [cols="100px,100px, 3*", options="header"]
 |===
